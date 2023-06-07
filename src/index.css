@@ -34,3 +34,33 @@ body {
   background-color: black;
   font-family: "Montserrat", sans-serif;
 }
+
+.skillbar {
+  width: 100%;
+  height: 20px;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.skillbar-fill {
+  width: 0;
+  height: 100%;
+  background-color: #4caf50;
+  position: absolute;
+  transition: width 1s ease;
+}
+
+.skillbar-fill.filled {
+  width: 80%; /* Adjust this value according to your needs */
+}
+
+/* Optional styles for better visibility */
+.skillbar-fill:after {
+  content: attr(data-value);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+}
