@@ -13,16 +13,18 @@ const SkillBar = () => {
   ];
 
   return (
-    <section className="skill-section text-columbia-blue py-[100px] px-[80px] bg-blue-yonder">
+    <section className="skill-section text-columbia-blue bg-blue-yonder pt-[40px] pb-[60px] px-[50px]">
       <div className="skill-wrapper container mx-auto">
-        <h2 className="font-semibold text-4xl mb-[70px] relative inline-block text-columbia-blue after:content-['] after:absolute after:h-[4px] after:w-[110%] after:bg-columbia-blue after:bottom-[-8px] after:left-0">
+        <h2 className="font-semibold text-2xl md:text-4xl mb-[30px] md:mb-[70px] relative inline-block text-columbia-blue after:content-['] after:absolute after:h-[4px] after:w-[110%] after:bg-columbia-blue after:bottom-[-8px] after:left-0">
           Skills
         </h2>
-        <div className="skills columns-2">
+        <div className="skills md:columns-2">
           {skills.map((skill, index) => (
             <div className="skill-name mb-6 " key={index}>
-              <p className="font-semibold text-lg">{skill.name}</p>
-              <div className="skills-bar-wrapper flex flex-col items-end w-[80%]">
+              <p className="font-semibold  text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
+                {skill.name}
+              </p>
+              <div className="skills-bar-wrapper flex flex-col items-end w-[100%] md:w-[80%] text-sm md:text-lg">
                 <span>{skill.percentage}</span>
                 <div className="skill-bar w-[100%] block bg-dark-vanilla h-[8px] rounded relative">
                   <span

@@ -38,39 +38,51 @@ const techSlides = [
 const TechStackSlider = () => {
   return (
     <>
-      <Splide
-        className="py-[80px]"
-        aria-label="My Favorite Images"
-        options={{
-          type: "loop",
-          gap: "10px",
-          drag: "free",
-          arrows: false,
-          pagination: false,
-          perPage: 8,
-          autoScroll: {
-            pauseOnHover: false,
-            pauseOnFocus: false,
-            rewind: false,
-            speed: 1,
-          },
-        }}
-        extensions={{ AutoScroll }}
-      >
-        {techSlides.map((slide, index) => (
-          <SplideSlide key={index}>
-            <img
-              src={slide.image}
-              alt=""
-              style={{
-                width: "50%",
-                aspectRatio: "3/2",
-                objectFit: "contain",
-              }}
-            />
-          </SplideSlide>
-        ))}
-      </Splide>
+      <section className="tech-section py-[50px]">
+        <Splide
+          aria-label="My Favorite Images"
+          options={{
+            type: "loop",
+            gap: "10px",
+            drag: "free",
+            arrows: false,
+            pagination: false,
+            perPage: 8,
+            autoScroll: {
+              pauseOnHover: false,
+              pauseOnFocus: false,
+              rewind: false,
+              speed: 1,
+            },
+            breakpoints: {
+              648: {
+                perPage: 4,
+              },
+              1024: {
+                perPage: 6,
+              },
+              1280: {
+                perPage: 7,
+              },
+            },
+          }}
+          extensions={{ AutoScroll }}
+        >
+          {techSlides.map((slide, index) => (
+            <SplideSlide key={index}>
+              <img
+                src={slide.image}
+                alt=""
+                style={{
+                  width: "50%",
+                  aspectRatio: "3/2",
+                  objectFit: "contain",
+                }}
+              />
+            </SplideSlide>
+          ))}
+        </Splide>
+      </section>
     </>
   );
 };

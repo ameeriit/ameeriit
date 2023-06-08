@@ -10,19 +10,31 @@ const Portfolio = () => {
 
   return (
     <>
-      <section className="portfolio-section container mx-auto text-columbia-blue">
-        <div className="portfolio-wrapper py-[100px]">
-          <h2 className=" font-semibold text-4xl mb-6 inline-block relative after:content-['] after:absolute after:h-[4px] after:w-[110%] after:bg-columbia-blue after:bottom-[-8px] after:left-0">
+      <section className="portfolio-section  text-columbia-blue pt-[40px] pb-[60px] px-[50px]">
+        <div className="portfolio-wrapper container mx-auto">
+          <h2 className=" font-semibold text-2xl md:text-4xl mb-6 md:mb-10 inline-block relative after:content-[''] after:absolute after:h-[4px] after:w-[110%] after:bg-columbia-blue after:bottom-[-8px] after:left-0">
             Portfolio
           </h2>
-          <p className="text-xl mb-8">Check My Works here</p>
-          <div className="project-showcase flex flex-wrap justify-center gap-6">
+          <p className=" mb-8 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
+            Check My Works here
+          </p>
+          <div className="project-showcase flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6">
             {images.map((image, index) => (
-              <div className="project w-[30%]" key={index}>
-                <img src={image} alt="" style={{ width: "100%" }} />
-                <div className="flex justify-between p-8">
-                  <p className="font-semibold text-xl">Demo</p>
-                  <p className="font-semibold text-xl">Code</p>
+              <div
+                className="project  w-[90%] md:w-[30%] sm:w-[40%]"
+                key={index}
+              >
+                <img
+                  className="mb-4 md:mb-0"
+                  src={image}
+                  alt=""
+                  style={{ width: "100%" }}
+                />
+                <div className="flex justify-between md:p-8 flex-col md:flex-row">
+                  <p className="font-semibold text-sm md:text-xl mb-2 md:mb-0">
+                    Demo
+                  </p>
+                  <p className="font-semibold text-sm md:text-xl">Code</p>
                 </div>
               </div>
             ))}
