@@ -14,7 +14,7 @@ const Banner = () => {
   };
   return (
     <>
-      <section className="banner-section pt-[20px] pb-[10px] px-[50px]">
+      <section className="banner-section pt-[120px] px-[50px]">
         <div className="banner-wrapper container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
           <div className="banner-content md:max-w-sm lg:max-w-xl">
             <h1

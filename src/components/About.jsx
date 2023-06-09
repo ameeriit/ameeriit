@@ -16,15 +16,15 @@ const About = () => {
             fuga quibusdam consequuntur. Vitae, at laudantium.
           </p>
           <p className="mb-4 text-columbia-blue text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eveniet
-            vero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
-            explicabo mollitia.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt nobis
+            perferendis facilis repellendus, nesciunt minima magnam.
           </p>
           <p className="mb-4 text-columbia-blue text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Iure quo, quaerat,
-            repellat sit laboriosam libero suscipit natus iusto hic excepturi
-            reru.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt nobis
+            perferendis facilis repellendus, nesciunt minima magnam cum totam ex
+            id debitis, minus repudiandae sint esse, est voluptatem laudantium
+            optio? Animi. Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit.
           </p>
         </div>
       </section>

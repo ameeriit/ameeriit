@@ -11,7 +11,7 @@ import Html from "../assets/images/html.svg";
 import Jquery from "../assets/images/jquery.svg";
 import Js from "../assets/images/js.svg";
 import Less from "../assets/images/less.svg";
-import Photoshop from "../assets/images/photoshop.svg";
+import PhotoShop from "../assets/images/photoShop.svg";
 import ReactImg from "../assets/images/react.svg";
 import Redux from "../assets/images/redux.svg";
 import Sass from "../assets/images/sass.svg";
@@ -27,7 +27,7 @@ const techSlides = [
   { image: Jquery },
   { image: Js },
   { image: Less },
-  { image: Photoshop },
+  { image: PhotoShop },
   { image: ReactImg },
   { image: Redux },
   { image: Sass },
@@ -38,7 +38,7 @@ const techSlides = [
 const TechStackSlider = () => {
   return (
     <>
-      <section className="tech-section py-[50px]">
+      <section className="tech-section py-[70px]">
         <Splide
           aria-label="My Favorite Images"
           options={{
@@ -74,7 +74,7 @@ const TechStackSlider = () => {
                 src={slide.image}
                 alt=""
                 style={{
-                  width: "50%",
+                  width: "40%",
                   aspectRatio: "3/2",
                   objectFit: "contain",
                 }}
