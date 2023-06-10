@@ -11,7 +11,7 @@ import Html from "../assets/images/html.svg";
 import Jquery from "../assets/images/jquery.svg";
 import Js from "../assets/images/js.svg";
 import Less from "../assets/images/less.svg";
-import PhotoShop from "../assets/images/photoShop.svg";
+import PhotoShop from "../assets/images/photoshop.svg";
 import ReactImg from "../assets/images/react.svg";
 import Redux from "../assets/images/redux.svg";
 import Sass from "../assets/images/sass.svg";
