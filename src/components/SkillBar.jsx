@@ -24,12 +24,17 @@ const SkillBar = () => {
               <p className="font-semibold  text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
                 {skill.name}
               </p>
-              <div className="skills-bar-wrapper flex flex-col items-end w-[100%] md:w-[80%] text-sm md:text-lg">
+              <div
+                className={`skills-bar-wrapper flex flex-col items-end w-[100%] md:w-[80%] text-sm md:text-lg ${skill.percentage}`}
+              >
                 <span>{skill.percentage}</span>
                 <div className="skill-bar w-[100%] block bg-dark-vanilla h-[8px] rounded relative">
                   <span
-                    className="skill-percentage absolute w-[80%] h-[8px] rounded left-0 top-0"
-                    style={{ backgroundColor: skill.color }}
+                    className="skill-percentage absolute h-[8px] rounded left-0 top-0"
+                    style={{
+                      width: skill.percentage,
+                      backgroundColor: skill.color,
+                    }}
                   ></span>
                 </div>
               </div>

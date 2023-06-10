@@ -16,14 +16,16 @@ const Banner = () => {
     <>
       <section className="banner-section pt-[120px] px-[50px]">
         <div className="banner-wrapper container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
-          <div className="banner-content md:max-w-sm lg:max-w-xl">
+          <div className="banner-content w-full lg:w-3/5">
             <h1
               className="font-extrabold text-5xl md:text-6xl lg:text-8xl font-[Gruppo] mb-6 text-clip"
               style={rainbowStyle}
             >
-              Amrit Pokharel
+              Amrit
+              <br />
+              Pokharel
             </h1>
-            <div className="flex gap-2 flex-col md:flex-row mb-4 md:mb-0">
+            <div className="flex gap-2 flex-col md:flex-row mb-4 md:mb-0 ">
               <p className="text-columbia-blue font-semibold text-[25px] md:mb-6 ">
                 Hi, I am a Web
               </p>
@@ -41,8 +43,8 @@ const Banner = () => {
               </ul>
             </div>
             <p className="text-columbia-blue mb-6 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-              repellendus quod ipsa laudantium.
+              Enjoys building Web-Interface. Can be Your future Web Design and
+              Development partner.
             </p>
             <a
               href="#_"
@@ -55,7 +57,7 @@ const Banner = () => {
               </span>
             </a>
           </div>
-          <div className="banner-img">
+          <div className="banner-img w-full lg:w-2/5">
             <img className="w-[100%] h-[100%]" src={bannerpic} alt="ban-logo" />
           </div>
         </div>

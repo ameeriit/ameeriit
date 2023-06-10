@@ -44,7 +44,7 @@ const Header = () => {
                 {navLinks.map((link) => (
                   <li className="menu-items" key={link.path}>
                     <Link
-                      className="text-columbia-blue font-montserrat-normal text-lg hover:text-picton-blue"
+                      className="text-columbia-blue font-montserrat-normal text-lg hover:text-malachite"
                       to={link.path}
                     >
                       {link.name}
@@ -64,7 +64,7 @@ const Header = () => {
             <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-malachite group-hover:h-full ease"></span>
             <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-malachite opacity-0 group-hover:opacity-100"></span>
             <span className="relative flex gap-1 items-center transition-colors duration-300 delay-200 ease ">
-              Mario
+              Play Mario
               <span className="font-medium text-base group-hover:text-black">
                 ?
               </span>
@@ -72,7 +72,7 @@ const Header = () => {
           </a>
           <button
             onClick={handleHamClick}
-            className="ham-btn flex flex-col items-end absolute top-[40px] right-[50px] md:hidden"
+            className="ham-btn flex flex-col items-end md:hidden"
           >
             <span
               className={`block w-[32px] h-[3px] bg-malachite mb-[5px] transition-all ${
