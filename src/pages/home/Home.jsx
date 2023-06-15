@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <TechStackSlider />
       <About />
+      <TechStackSlider />
       <Portfolio />
       <SkillBar />
       <Contact />

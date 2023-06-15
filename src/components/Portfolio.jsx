@@ -40,7 +40,10 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="portfolio-section text-columbia-blue pt-[40px] pb-[60px] px-[50px]">
+    <section
+      id="section2"
+      className="portfolio-section text-columbia-blue pt-[40px] pb-[60px] px-[50px]"
+    >
       <div className="portfolio-wrapper container mx-auto">
         <h2 className="font-semibold text-2xl md:text-4xl mb-6 md:mb-10 inline-block relative after:content-[''] after:absolute after:h-[4px] after:w-[110%] after:bg-columbia-blue after:bottom-[-8px] after:left-0">
           Portfolio
