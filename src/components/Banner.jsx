@@ -1,6 +1,6 @@
 import { FaDownload } from "react-icons/fa";
 import bannermy from "../assets/images/banner-my.svg";
-import bannerbg from "../assets/images/banner-bg.jpg";
+import banbg from "../assets/images/ban-bg.jpg";
 import Typed from "typed.js";
 import { useRef, useEffect } from "react";
 
@@ -36,7 +36,7 @@ const Banner = () => {
     <section className="banner-section w-[100%] h-[100%] relative">
       <div className="banner-img-wrapper absolute top-0 left-0 w-[100%] h-[100%] before:contents[''] before:bg-[iris] before:opacity-6 before:block before:w-[100%] before:h-[100%] before:absolute before:top-0 before:left-0 z-[-1]">
         <img
-          src={bannerbg}
+          src={banbg}
           alt="banner.jpg"
           className="w-[100%] h-[100%] object-cover"
         />
