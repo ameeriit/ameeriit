@@ -1,14 +1,30 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const [toggleHam, setToggleHam] = useState(true);
+  const [isFixed, setIsFixed] = useState(false);
 
   const handleHamClick = () => {
     setToggleHam(!toggleHam);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 200) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const navLinks = [
     { path: "/abt", name: "About" },
@@ -19,13 +35,17 @@ const Header = () => {
 
   return (
     <>
-      <header className="header-section absolute w-[100%] z-50">
-        <div className="header-wrapper container mx-auto p-10">
+      <header
+        className={`header-section ${
+          isFixed ? "fixed bg-iris" : "absolute bg-[inherit]"
+        } w-[100%] z-50 transition-all duration-500 ease-in-out `}
+      >
+        <div className="header-wrapper container mx-auto p-5">
           <div className="site-title-nav flex justify-between items-center gap-12">
             <div className="site-title">
               <Link to="/">
                 <img
-                  className="invert-0 hover:opacity-[0.5]"
+                  className="invert-0 hover:opacity-[0.5] z-50"
                   src={logo}
                   width={100}
                   alt="logo"
@@ -59,19 +79,19 @@ const Header = () => {
               className="ham-btn flex flex-col items-end md:hidden z-50"
             >
               <span
-                className={`block w-[32px] h-[3px] bg-malachite mb-[5px] transition-all ${
+                className={`block w-[32px] h-[3px] bg-white mb-[5px] transition-all ${
                   toggleHam
                     ? ""
                     : "rotate-[45deg] translate-x-[6px] translate-y-[8px]"
                 }`}
               ></span>
               <span
-                className={`block w-[20px] h-[3px] bg-malachite transition-all ${
+                className={`block w-[20px] h-[3px] bg-white transition-all ${
                   toggleHam ? "" : "translate-x-4 opacity-0 "
                 }`}
               ></span>
               <span
-                className={`block w-[12px] h-[3px] bg-malachite mt-[5px] transition-all ${
+                className={`block w-[12px] h-[3px] bg-white mt-[5px] transition-all ${
                   toggleHam
                     ? ""
                     : "w-[32px] rotate-[-45deg] translate-x-[6px] translate-y-[-8px]"

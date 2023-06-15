@@ -22,13 +22,12 @@
 const About = () => {
   return (
     <>
-      <section className="about-section bg-blue-yonder py-[60px] px-[50px]">
-        <div className="about-wrapper container mx-auto">
-          <p className="text-columbia-blue text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] text-center">
-            "Passionate and driven Frontend Developer with five and a half
-            months of experience. Experienced in designing and developing
-            stunning websites and user interfaces, committed to delivering
-            high-quality work, and staying up-to-date with the latest
+      <section className="about-section bg-smoky-black py-[60px] px-[50px]">
+        <div className="about-wrapper container mx-auto lg:w-[600px]">
+          <p className="text-white text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] text-center">
+            "Passionate and driven Frontend Developer. Experienced in designing
+            and developing stunning websites and user interfaces, committed to
+            delivering high-quality work, and staying up-to-date with the latest
             technologies."
           </p>
 

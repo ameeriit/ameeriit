@@ -41,7 +41,7 @@ const Banner = () => {
           className="w-[100%] h-[100%] object-cover"
         />
       </div>
-      <div className="banner-wrapper relative container mx-auto flex flex-col md:flex-row items-center justify-between px-10 pt-40 pb-20 gap-[70px]">
+      <div className="banner-wrapper relative container mx-auto flex flex-col md:flex-row items-center justify-between px-10 pt-[120px] pb-[30px] xl:pt-[150px] xl:pb-[50px] 2xl:pt-[250px] 2xl:pb-[50px] gap-[70px]">
         <div className="banner-img w-full lg:w-2/5">
           <img
             className="w-[280px] h-[100%] mx-auto"
@@ -62,7 +62,8 @@ const Banner = () => {
 
           <div className="flex gap-2 flex-col md:flex-row mb-4 md:mb-0">
             <p className="text-columbia-blue font-semibold text-[25px] md:mb-6">
-              Hi, I am a <span className="text-malachite" ref={typedRef}></span>
+              Hi, I am a Web-
+              <span className="text-malachite" ref={typedRef}></span>
             </p>
           </div>
           <a
