@@ -1,45 +1,48 @@
+import skillMore from "../assets/images/arrow_loop_right.svg";
+
 const SkillBar = () => {
   const skills = [
     { name: "HTML", percentage: "90%", color: "#F44336" },
     { name: "CSS", percentage: "80%", color: "#E91E63" },
     { name: "JavaScript", percentage: "70%", color: "#9C27B0" },
-    { name: "Wordpress", percentage: "60%", color: "#673AB7" },
-    { name: "Jquery", percentage: "50%", color: "#3F51B5" },
-    { name: "React", percentage: "60%", color: "#2196F3" },
-    { name: "Tailwind", percentage: "80%", color: "#03A9F4" },
-    { name: "Bootstrap", percentage: "80%", color: "#00BCD4" },
-    { name: "Less", percentage: "80%", color: "#009688" },
-    { name: "Sass", percentage: "80%", color: "#4CAF50" },
   ];
 
   return (
-    <section className="skill-section text-columbia-blue bg-blue-yonder pt-[40px] pb-[60px] px-[50px]">
-      <div className="skill-wrapper container mx-auto">
-        <h2 className="font-semibold text-2xl md:text-4xl mb-[30px] md:mb-[70px] relative inline-block text-columbia-blue after:content-['] after:absolute after:h-[4px] after:w-[110%] after:bg-columbia-blue after:bottom-[-8px] after:left-0">
+    <section className="skill-section text-smoky-black">
+      <div className="skill-wrapper container mx-auto px-10 py-12">
+        <h2
+          className="font-medium text-6xl mb-10 font-[itim] "
+          style={{ textShadow: "0 2px 6px black" }}
+        >
           Skills
         </h2>
-        <div className="skills md:columns-2">
+        <div className="skills  flex flex-wrap justify-center gap-x-[125px] gap-y-[50px] text-center mb-[80px]">
           {skills.map((skill, index) => (
-            <div className="skill-name mb-6 " key={index}>
-              <p className="font-semibold  text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
+            <div className="skill-name" key={index}>
+              <div
+                style={{ border: "10px solid" + skill.color }}
+                className={`skills-bar-wrapper mb-[20px] text-black bg-white rounded-[50%] w-[200px] h-[200px] flex items-center justify-center`}
+              >
+                <span className="text-2xl font-brunoace font-normal">
+                  {skill.percentage}
+                </span>
+              </div>
+              <p className="text-2xl font-brunoace font-semibold">
                 {skill.name}
               </p>
-              <div
-                className={`skills-bar-wrapper flex flex-col items-end w-[100%] md:w-[80%] text-sm md:text-lg ${skill.percentage}`}
-              >
-                <span>{skill.percentage}</span>
-                <div className="skill-bar w-[100%] block bg-dark-vanilla h-[8px] rounded relative">
-                  <span
-                    className="skill-percentage absolute h-[8px] rounded left-0 top-0"
-                    style={{
-                      width: skill.percentage,
-                      backgroundColor: skill.color,
-                    }}
-                  ></span>
-                </div>
-              </div>
             </div>
           ))}
+        </div>
+        <div className="skills-more max-w-[850px] mx-auto flex gap-[20px]">
+          <img className="w-[80px]" src={skillMore} alt="" />
+          <div>
+            <h3 className=" inline-block font-brunoace relative text-lg font-semibold before:contents-[''] before:block before:h-[3px] before:w-[120%] before:bg-smoky-black before:absolute before:bottom-[-3px] before:left-0 mb-[10px]">
+              More...
+            </h3>
+            <p className="font-jura text-base font-semibold">
+              React, Wordpress
+            </p>
+          </div>
         </div>
       </div>
     </section>
