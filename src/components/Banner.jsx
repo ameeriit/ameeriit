@@ -1,5 +1,5 @@
 import { FaDownload } from "react-icons/fa";
-import bannerpic from "../assets/images/my.png";
+import banbg from "../assets/images/ban-bg.png";
 
 const Banner = () => {
   const rainbowStyle = {
