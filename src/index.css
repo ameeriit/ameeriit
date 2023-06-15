@@ -5,34 +5,43 @@
 /* font family */
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("./assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-family: "Jura";
+  src: url("./assets/fonts/Jura-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 @font-face {
-  font-family: "Montserrat";
-  src: url("./assets/fonts/Montserrat-Light.ttf") format("truetype");
-  font-weight: 300;
+  font-family: "Jura";
+  src: url("./assets/fonts/Jura-Light.ttf") format("truetype");
+  font-weight: light;
 }
 @font-face {
-  font-family: "Montserrat";
-  src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-family: "Jura";
+  src: url("./assets/fonts/Jura-Medium.ttf") format("truetype");
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Jura";
+  src: url("./assets/fonts/Jura-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 @font-face {
-  font-family: "Montserrat";
-  src: url("./assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
-  font-weight: 600;
+  font-family: "Jura";
+  src: url("./assets/fonts/Jura-SemiBold.ttf") format("truetype");
+  font-weight: semibold;
 }
 @font-face {
-  font-family: "Gruppo";
-  src: url("./assets/fonts/Gruppo-Regular.ttf") format("truetype");
+  font-family: "Itim";
+  src: url("./assets/fonts/Itim-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "BrunoAce";
+  src: url("./assets/fonts/BrunoAce-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 
 body {
-  background-color: black;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Jura", sans-serif;
 }
 
 .skillbar {

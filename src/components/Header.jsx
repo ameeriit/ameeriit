@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
+
 import { useState } from "react";
 
 const Header = () => {
@@ -10,30 +11,30 @@ const Header = () => {
   };
 
   const navLinks = [
-    { path: "/", name: "Home" },
-    { path: "/", name: "About" },
-    { path: "/", name: "Contact" },
-    { path: "/", name: "Experience" },
+    { path: "/abt", name: "About" },
+    { path: "/exp", name: "Experience" },
+    { path: "/prj", name: "Projects" },
+    { path: "/blog", name: "Blogs" },
   ];
 
   return (
     <>
-      <header className="header-section px-12 fixed w-[100%] bg-black z-50">
-        <div className="header-wrapper container mx-auto flex justify-between items-center py-6">
-          <div className="site-title-nav flex gap-12">
+      <header className="header-section absolute w-[100%] z-50">
+        <div className="header-wrapper container mx-auto p-10">
+          <div className="site-title-nav flex justify-between items-center gap-12">
             <div className="site-title">
               <Link to="/">
                 <img
                   className="invert-0 hover:opacity-[0.5]"
                   src={logo}
-                  width={30}
+                  width={100}
                   alt="logo"
                 />
               </Link>
             </div>
             <nav
-              className={`menu-navigation md:static md:block flex fixed w-[100%] h-[100%] top-0  items-center justify-center bg-black transition-all ${
-                toggleHam ? "left-[100%]" : "left-[0]"
+              className={`menu-navigation md:static md:block flex fixed z-50 w-[100%] md:w-[inherit] h-[100%] md:h-[inherit]  top-0  items-center justify-center bg-black md:bg-inherit transition-all ${
+                toggleHam ? "left-[100%]  " : "left-[0] "
               }`}
             >
               <ul
@@ -53,8 +54,32 @@ const Header = () => {
                 ))}
               </ul>
             </nav>
+            <button
+              onClick={handleHamClick}
+              className="ham-btn flex flex-col items-end md:hidden z-50"
+            >
+              <span
+                className={`block w-[32px] h-[3px] bg-malachite mb-[5px] transition-all ${
+                  toggleHam
+                    ? ""
+                    : "rotate-[45deg] translate-x-[6px] translate-y-[8px]"
+                }`}
+              ></span>
+              <span
+                className={`block w-[20px] h-[3px] bg-malachite transition-all ${
+                  toggleHam ? "" : "translate-x-4 opacity-0 "
+                }`}
+              ></span>
+              <span
+                className={`block w-[12px] h-[3px] bg-malachite mt-[5px] transition-all ${
+                  toggleHam
+                    ? ""
+                    : "w-[32px] rotate-[-45deg] translate-x-[6px] translate-y-[-8px]"
+                }`}
+              ></span>
+            </button>
           </div>
-          <a
+          {/* <a
             href="https://mario.nintendo.com/"
             className="mario-btn relative pt-[10px] pb-[8px] px-[10px] overflow-hidden font-regular text-columbia-blue hover:text-black rounded-lg group mr-[50px]"
           >
@@ -69,31 +94,7 @@ const Header = () => {
                 ?
               </span>
             </span>
-          </a>
-          <button
-            onClick={handleHamClick}
-            className="ham-btn flex flex-col items-end md:hidden"
-          >
-            <span
-              className={`block w-[32px] h-[3px] bg-malachite mb-[5px] transition-all ${
-                toggleHam
-                  ? ""
-                  : "rotate-[45deg] translate-x-[6px] translate-y-[8px]"
-              }`}
-            ></span>
-            <span
-              className={`block w-[20px] h-[3px] bg-malachite transition-all ${
-                toggleHam ? "" : "translate-x-4 opacity-0 "
-              }`}
-            ></span>
-            <span
-              className={`block w-[12px] h-[3px] bg-malachite mt-[5px] transition-all ${
-                toggleHam
-                  ? ""
-                  : "w-[32px] rotate-[-45deg] translate-x-[6px] translate-y-[-8px]"
-              }`}
-            ></span>
-          </button>
+          </a> */}
         </div>
       </header>
     </>
