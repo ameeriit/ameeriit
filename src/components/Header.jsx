@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const [toggleHam, setToggleHam] = useState(true);

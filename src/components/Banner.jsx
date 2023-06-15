@@ -1,5 +1,4 @@
 import { FaDownload } from "react-icons/fa";
-import banbg from "../assets/images/ban-bg.png";
 
 const Banner = () => {
   const rainbowStyle = {
@@ -12,22 +11,6 @@ const Banner = () => {
     MozBackgroundClip: "text",
     filter: "drop-shadow(0 0 2rem #000)",
   };
-
-  const typedRef = useRef(null);
-
-  useEffect(() => {
-    const options = {
-      strings: ["Developer.", "Designer."],
-      typeSpeed: 100,
-      loop: true,
-    };
-
-    const typed = new Typed(typedRef.current, options);
-
-    return () => {
-      typed.destroy();
-    };
-  }, []);
 
   return (
     <>
@@ -75,8 +58,8 @@ const Banner = () => {
             </span>
           </a>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
