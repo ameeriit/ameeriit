@@ -8,10 +8,13 @@ const SkillBar = () => {
   ];
 
   return (
-    <section className="skill-section text-smoky-black">
-      <div className="skill-wrapper container mx-auto px-10 py-12">
+    <section
+      id="section2"
+      className="skill-section text-smoky-black py-[60px] px-[50px]"
+    >
+      <div className="skill-wrapper container mx-auto">
         <h2
-          className="font-medium text-6xl mb-10 font-[itim] "
+          className="font-medium text-6xl mb-10 font-[itim]"
           style={{ textShadow: "0 2px 6px black" }}
         >
           Skills

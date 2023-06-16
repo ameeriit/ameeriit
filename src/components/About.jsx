@@ -22,16 +22,26 @@
 const About = () => {
   return (
     <>
-      <section className="about-section bg-smoky-black py-[60px] px-[50px]">
-        <div className="about-wrapper container mx-auto lg:w-[600px]">
-          <p className="text-white text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] text-center">
-            "Passionate and driven Frontend Developer. Experienced in designing
-            and developing stunning websites and user interfaces, committed to
-            delivering high-quality work, and staying up-to-date with the latest
-            technologies."
-          </p>
+      <section
+        id="section1"
+        className="about-section bg-smoky-black py-[60px] px-[50px]"
+      >
+        <div className="container mx-auto">
+          <h2
+            className="font-medium text-6xl mb-10 font-[itim] text-white"
+            style={{ textShadow: "0 2px 6px black" }}
+          >
+            ABOUT
+          </h2>
+          <div className="lg:w-[600px] mx-auto">
+            <p className="text-white text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] text-center">
+              "Passionate and driven Frontend Developer. Experienced in
+              designing and developing stunning websites and user interfaces,
+              committed to delivering high-quality work, and staying up-to-date
+              with the latest technologies."
+            </p>
 
-          {/* <ul className="mb-4 list-decimal pl-8">
+            {/* <ul className="mb-4 list-decimal pl-8">
             {expericenceLi.map((exp, index) => (
               <li className="text-columbia-blue" key={index}>
                 {exp.expitems}
@@ -45,6 +55,7 @@ const About = () => {
               </li>
             ))}
           </ul> */}
+          </div>
         </div>
       </section>
     </>

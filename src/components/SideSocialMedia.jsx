@@ -60,7 +60,7 @@ const SideSocialMedia = () => {
 
   const getIconColor = (sectionId) => {
     if (sectionId === "section1") {
-      return "red"; // Customize the color for the section with id "section1"
+      return "#5FDB86"; // Customize the color for the section with id "section1"
     }
     if (sectionId === "section2") {
       return "#6147C6"; // Customize the color for the section with id "section2"
