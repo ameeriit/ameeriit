@@ -1,12 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaMailchimp,
-  FaTwitter,
-  FaInstagram,
-  FaFacebook,
-} from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaMailchimp } from "react-icons/fa";
 
 const SideSocialMedia = () => {
   const socialLinks = [
@@ -21,18 +14,6 @@ const SideSocialMedia = () => {
     {
       socials: <FaMailchimp style={{ width: "30px", height: "30px" }} />,
       url: "mailto:amritpokharel51@gmail.com",
-    },
-    {
-      socials: <FaTwitter style={{ width: "24px", height: "24px" }} />,
-      url: "https://twitter.com/ameeriit",
-    },
-    {
-      socials: <FaFacebook style={{ width: "24px", height: "24px" }} />,
-      url: "https://www.facebook.com/ameeriit/",
-    },
-    {
-      socials: <FaInstagram style={{ width: "24px", height: "24px" }} />,
-      url: "https://www.instagram.com/amrit.pokharel_01/",
     },
   ];
 
