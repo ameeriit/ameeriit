@@ -1,12 +1,18 @@
 import skillMore from "../assets/images/arrow_loop_right.svg";
+import {
+  CircularProgressbar,
+  AnimatedProgressProvider,
+  buildStyles,
+} from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+import { easeQuadInOut } from "d3-ease";
 
 const SkillBar = () => {
-  const skills = [
-    { name: "HTML", percentage: "90%", color: "#F44336" },
-    { name: "CSS", percentage: "80%", color: "#E91E63" },
-    { name: "JavaScript", percentage: "70%", color: "#9C27B0" },
-  ];
-
+  // const skills = [
+  //   { name: "HTML", percentage: 90, color: "#F44336" },
+  //   { name: "CSS", percentage: 80, color: "#E91E63" },
+  //   { name: "JavaScript", percentage: 70, color: "#9C27B0" },
+  // ];
   return (
     <section
       id="section2"
@@ -19,23 +25,50 @@ const SkillBar = () => {
         >
           Skills
         </h2>
-        <div className="skills  flex flex-wrap justify-center gap-x-[125px] gap-y-[50px] text-center mb-[80px]">
+
+        <AnimatedProgressProvider
+          valueStart={0}
+          valueEnd={66}
+          duration={1.4}
+          easingFunction={easeQuadInOut}
+          repeat
+        >
+          {(value) => {
+            const roundedValue = Math.round(value);
+            return (
+              <CircularProgressbar
+                value={value}
+                text={`${roundedValue}%`}
+                /* This is important to include, because if you're fully managing the
+        animation yourself, you'll want to disable the CSS animation. */
+                styles={buildStyles({ pathTransition: "none" })}
+              />
+            );
+          }}
+        </AnimatedProgressProvider>
+
+        {/* <div className="flex gap-20 justify-center text-center mb-[60px]">
           {skills.map((skill, index) => (
-            <div className="skill-name" key={index}>
-              <div
-                style={{ border: "10px solid" + skill.color }}
-                className={`skills-bar-wrapper mb-[20px] text-black bg-white rounded-[50%] w-[200px] h-[200px] flex items-center justify-center`}
-              >
-                <span className="text-2xl font-brunoace font-normal">
-                  {skill.percentage}
-                </span>
+            <div className="skill " key={index}>
+              <div className="mb-[20px]" style={{ width: 200, height: 200 }}>
+                <CircularProgressbar
+                  className="font-itim"
+                  value={skill.percentage}
+                  text={`${skill.percentage}%`}
+                  strokeWidth={6}
+                  easingFunction={easeQuadInOut}
+                  styles={buildStyles({
+                    textColor: "black",
+                    pathColor: skill.color,
+                  })}
+                />
               </div>
               <p className="text-2xl font-brunoace font-semibold">
                 {skill.name}
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
         <div className="skills-more max-w-[850px] mx-auto flex gap-[20px]">
           <img className="w-[80px]" src={skillMore} alt="" />
           <div>
