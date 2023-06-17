@@ -22,7 +22,7 @@ const Interests = () => {
           INTERESTS
         </h2>
         <div className="flex items-center justify-between">
-          <ul className="content-img-wrapper h-fit ml-10 relative before:content before:block before:w-[3px] before:h-[120%] before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[-20px] before:bg-smoky-black">
+          <ul className="content-img-wrapper h-fit ml-10 relative before:content before:block before:w-[3px] before:h-[110%] before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[-20px] before:bg-smoky-black">
             {interestList.map((inList, index) => (
               <li className="text-xl" key={index}>
                 {inList.list}
