@@ -43,7 +43,6 @@ const TechStackSlider = () => {
           aria-label="My Favorite Images"
           options={{
             type: "loop",
-            gap: "10px",
             drag: "free",
             arrows: false,
             pagination: false,
@@ -55,8 +54,14 @@ const TechStackSlider = () => {
               speed: 1,
             },
             breakpoints: {
+              280: {
+                perPage: 1,
+              },
+              425: {
+                perPage: 2,
+              },
               648: {
-                perPage: 4,
+                perPage: 3,
               },
               1024: {
                 perPage: 6,

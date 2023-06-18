@@ -28,7 +28,7 @@ const About = () => {
       >
         <div className="container mx-auto">
           <h2
-            className="font-medium text-6xl mb-10 font-[itim] text-white"
+            className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10 font-[itim] text-white"
             style={{ textShadow: "0 2px 6px black" }}
           >
             ABOUT

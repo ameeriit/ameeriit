@@ -28,17 +28,14 @@ const Portfolio = () => {
     >
       <div className="portfolio-wrapper container mx-auto">
         <h2
-          className="font-medium text-6xl mb-10 font-[itim]"
+          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10 font-[itim]"
           style={{ textShadow: "0 2px 6px black" }}
         >
           PROJECTS
         </h2>
         <div className="project-showcase flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6">
           {projectImages.map((project, index) => (
-            <div
-              className="project px-8 w-[90%] md:w-[30%] sm:w-[40%]"
-              key={index}
-            >
+            <div className="project w-[90%] md:w-[30%] sm:w-[40%]" key={index}>
               <a href={project.demoUrl}>
                 <img
                   className="mb-4 md:mb-0"

@@ -16,15 +16,18 @@ const Interests = () => {
     >
       <div className="interests-wrapper container mx-auto text-smoky-black font-itim">
         <h2
-          className="font-medium text-6xl mb-4 "
+          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10 font-[itim] "
           style={{ textShadow: "0 2px 6px black" }}
         >
           INTERESTS
         </h2>
-        <div className="flex items-center justify-between">
-          <ul className="content-img-wrapper h-fit ml-10 relative before:content before:block before:w-[3px] before:h-[110%] before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[-20px] before:bg-smoky-black">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <ul className="content-img-wrapper mb-16 md:mb-0 h-fit ml-10 relative before:content before:block before:w-[3px] before:h-[110%] before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[-20px] before:bg-smoky-black">
             {interestList.map((inList, index) => (
-              <li className="text-xl" key={index}>
+              <li
+                className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]"
+                key={index}
+              >
                 {inList.list}
               </li>
             ))}

@@ -21,6 +21,7 @@ module.exports = {
         iris: "#6147C6",
         "smoky-black": "#0C0D0F",
       },
+
       // keyframes: {
       //   blink: {
       //     "0%, 100%": { transform: "rotate(-3deg)" },

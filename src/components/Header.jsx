@@ -1,14 +1,31 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const [toggleHam, setToggleHam] = useState(true);
+  const [isFixed, setIsFixed] = useState(false);
 
   const handleHamClick = () => {
     setToggleHam(!toggleHam);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 200) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const navLinks = [
     { path: "/abt", name: "About" },
@@ -19,11 +36,19 @@ const Header = () => {
 
   return (
     <>
-      <span className="absolute top-[10px] text-4xl font-semibold font-itim text-red-600 text-center inline-block w-[100%]">
+      <span className="absolute z-[100] top-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] font-semibold font-itim text-red-600 text-center inline-block w-[100%]">
         Website Under-Construction
       </span>
-      <header className="header-section absolute w-[100%] z-50">
-        <div className="header-wrapper container mx-auto p-10">
+      <header
+        className={`header-section ${
+          isFixed ? "fixed bg-iris" : "absolute bg-[inherit]"
+        } w-[100%] z-50 transition-all duration-500 ease-in-out `}
+      >
+        <div
+          className={`header-wrapper container mx-auto p-10 ${
+            isFixed ? "p-5" : ""
+          }`}
+        >
           <div className="site-title-nav flex justify-between items-center gap-12">
             <div className="site-title">
               <Link to="/">

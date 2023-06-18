@@ -41,7 +41,7 @@ const Banner = () => {
           className="w-[100%] h-[100%] object-cover"
         />
       </div>
-      <div className="banner-wrapper relative container mx-auto flex flex-col md:flex-row items-center justify-between px-10 md:pt-40 2xl:pt-60 md:pb-20 2xl:pb-60 gap-[70px]">
+      <div className="banner-wrapper relative container mx-auto flex flex-col md:flex-row items-center justify-between px-10 pt-40 2xl:pt-60 pb-20 2xl:pb-60 gap-[30px] sm:gap-[50px] md:gap-[70px]">
         <div className="banner-img w-full lg:w-2/5">
           <img
             className="w-[280px] h-[100%] mx-auto"
@@ -50,7 +50,7 @@ const Banner = () => {
           />
         </div>
         <div className="banner-content w-full lg:w-3/5">
-          <h1 className=" font-[itim] font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-white">
+          <h1 className="font-[itim] font-extrabold text-xl sm:text-5xl md:text-6xl lg:text-7xl mb-2 sm:mb-4 md:mb-6 text-white">
             Hi, I'm <br />
             <span
               className=" font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-clip"
@@ -61,7 +61,7 @@ const Banner = () => {
           </h1>
 
           <div className="flex gap-2 flex-col md:flex-row mb-4 md:mb-0">
-            <p className="text-columbia-blue font-semibold text-[25px] md:mb-6">
+            <p className="text-columbia-blue font-semibold text-[20px] sm:text-[24px] md:mb-6">
               Hi, I am a <span className="text-malachite" ref={typedRef}></span>
             </p>
           </div>

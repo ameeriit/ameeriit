@@ -8,56 +8,59 @@ const Contact = () => {
     >
       <div className="contact-wrapper container mx-auto">
         <h2
-          className="font-medium text-6xl mb-4 font-itim"
+          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10 font-[itim]"
           style={{ textShadow: "0 2px 6px black" }}
         >
           CONTACT
         </h2>
-        <div className="flex gap-[50px]">
-          <form className="flex flex-col w-[50%]">
+        <div className="flex flex-col :flex-row gap-[30px] md:gap-[50px]">
+          <form className="flex flex-col w-[100%] lg:w-[50%]">
             <label
-              className="font-brunoace font-semibold mb-1"
+              className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-brunoace font-semibold mb-1"
               htmlFor="fullname"
             >
               Full Name:
             </label>
             <input
-              className="border-[1px] border-smoky-black px-4 py-2 rounded-lg mb-4 outline-none font-itim font-normal "
+              className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] border-[1px] border-smoky-black px-4 py-2 rounded-lg mb-4 outline-none font-itim font-normal "
               id="fullname"
               type="text"
               placeholder="Full Name..."
               required
             />
-            <label className="font-brunoace font-semibold mb-1" htmlFor="email">
+            <label
+              className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-brunoace font-semibold mb-1"
+              htmlFor="email"
+            >
               E-mail:
             </label>
             <input
-              className="border-[1px] border-smoky-black px-4 py-2 rounded-lg mb-4 outline-none font-itim font-normal"
+              className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] border-[1px] border-smoky-black px-4 py-2 rounded-lg mb-4 outline-none font-itim font-normal"
               id="email"
               type="text"
               placeholder="E-mail..."
               required
             />
             <label
-              className="font-brunoace font-semibold mb-1"
+              className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-brunoace font-semibold mb-1"
               htmlFor="phonenumber"
             >
               Phone Number:
             </label>
             <input
-              className="border-[1px] border-smoky-black px-4 py-2 rounded-lg mb-4 outline-none font-itim font-normal"
+              className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] border-[1px] border-smoky-black px-4 py-2 rounded-lg mb-4 outline-none font-itim font-normal"
               id="phonenumber"
               type="text"
               placeholder="Phone Number..."
             />
             <label
-              className="font-brunoace font-semibold mb-1"
+              className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-brunoace font-semibold mb-1"
               htmlFor="message"
             >
               Message:
             </label>
             <textarea
-              className="border-[1px] border-smoky-black px-4 py-2 rounded-lg mb-4 outline-none font-itim font-normal"
+              className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] border-[1px] border-smoky-black px-4 py-2 rounded-lg mb-4 outline-none font-itim font-normal"
               id="message"
               name=""
               cols="30"
@@ -69,7 +72,7 @@ const Contact = () => {
               Send
             </button>
           </form>
-          <div className="flex justify-center items-center w-[50%]">
+          <div className="flex justify-center items-center w-[100%] lg:w-[50%]">
             <img className="rounded-xl" width={500} src={map} alt="" />
           </div>
         </div>
