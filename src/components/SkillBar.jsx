@@ -31,6 +31,7 @@ const SkillBar = () => {
                 end={skill.percentage}
                 enableScrollSpy="true"
                 scrollSpyDelay="5"
+                scrollSpyOnce="true"
                 suffix="%"
               ></CountUp>
               <p className="text-2xl font-brunoace font-semibold">
