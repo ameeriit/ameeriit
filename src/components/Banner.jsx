@@ -41,7 +41,7 @@ const Banner = () => {
           className="w-[100%] h-[100%] object-cover"
         />
       </div>
-      <div className="banner-wrapper relative container mx-auto flex flex-col md:flex-row items-center justify-between px-10 pt-40 pb-20 gap-[70px]">
+      <div className="banner-wrapper relative container mx-auto flex flex-col md:flex-row items-center justify-between px-10 md:pt-40 2xl:pt-60 md:pb-20 2xl:pb-60 gap-[70px]">
         <div className="banner-img w-full lg:w-2/5">
           <img
             className="w-[280px] h-[100%] mx-auto"
