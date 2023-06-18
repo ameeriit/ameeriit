@@ -65,6 +65,9 @@ const Contact = () => {
               placeholder="Message..."
               required
             ></textarea>
+            <button className="bg-iris text-white px-6 py-2 rounded transition-all hover:bg-malachite">
+              Send
+            </button>
           </form>
           <div className="flex justify-center items-center w-[50%]">
             <img className="rounded-xl" width={500} src={map} alt="" />

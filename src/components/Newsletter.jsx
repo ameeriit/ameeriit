@@ -27,8 +27,18 @@ const Newsletter = () => {
               type="text"
               placeholder="Type Your Email Here..."
             />
-            <button className="bg-white text-iris px-6 py-2 rounded transition-all hover:bg-malachite hover:text-white">
-              Subscribe
+            <button
+              href="https://mario.nintendo.com/"
+              className="bg-cetacean-blue text-white mario-btn relative pt-[10px] pb-[8px] px-[10px] overflow-hidden font-regular hover:text-black rounded-lg group"
+            >
+              <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-malachite group-hover:w-full ease"></span>
+              <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-malachite group-hover:w-full ease"></span>
+              <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-malachite group-hover:h-full ease"></span>
+              <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-malachite group-hover:h-full ease"></span>
+              <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-malachite opacity-0 group-hover:opacity-100"></span>
+              <span className="relative flex gap-1 items-center transition-colors duration-300 delay-200 ease ">
+                Subscribe
+              </span>
             </button>
           </form>
         </div>
