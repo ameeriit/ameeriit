@@ -29,7 +29,7 @@ const Newsletter = () => {
             />
             <button
               href="https://mario.nintendo.com/"
-              className="bg-cetacean-blue text-white mario-btn relative pt-[10px] pb-[8px] px-[10px] overflow-hidden font-regular rounded-lg group"
+              className="border-[2px] hover:border-malachite border-white text-white mario-btn relative pt-[10px] pb-[8px] px-[10px] overflow-hidden font-regular rounded-lg group"
             >
               <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-malachite group-hover:w-full ease"></span>
               <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-malachite group-hover:w-full ease"></span>

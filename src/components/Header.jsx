@@ -19,6 +19,9 @@ const Header = () => {
 
   return (
     <>
+      <span className="absolute top-[10px] text-4xl font-semibold font-itim text-red-600 text-center inline-block w-[100%]">
+        Website Under-Construction
+      </span>
       <header className="header-section absolute w-[100%] z-50">
         <div className="header-wrapper container mx-auto p-10">
           <div className="site-title-nav flex justify-between items-center gap-12">
