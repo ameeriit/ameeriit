@@ -27,8 +27,8 @@ const Newsletter = () => {
               type="text"
               placeholder="Type Your Email Here..."
             />
-            <button className="bg-iris px-6 py-2 rounded transition-all hover:bg-blue-yonder">
-              Button
+            <button className="bg-white text-iris px-6 py-2 rounded transition-all hover:bg-malachite hover:text-white">
+              Subscribe
             </button>
           </form>
         </div>
