@@ -4,11 +4,11 @@ const Newsletter = () => {
   return (
     <section
       id="section1"
-      className="newsletter-section text-white pt-[40px] pb-[60px] bg-smoky-black"
+      className="newsletter-section text-white pt-[40px] pb-[60px] px-[50px] bg-smoky-black"
     >
-      <div className="newsletter-wrapper">
+      <div className="newsletter-wrapper container mx-auto">
         <h2
-          className="font-medium text-6xl mb-10 font-[itim]  px-[50px]"
+          className="font-medium text-6xl mb-10 font-[itim]"
           style={{ textShadow: "0 2px 6px black" }}
         >
           NEWSLETTER
