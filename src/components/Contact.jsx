@@ -13,7 +13,7 @@ const Contact = () => {
         >
           CONTACT
         </h2>
-        <div className="flex flex-col :flex-row gap-[30px] md:gap-[50px]">
+        <div className="flex flex-col lg:flex-row gap-[30px] md:gap-[50px]">
           <form className="flex flex-col w-[100%] lg:w-[50%]">
             <label
               className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-brunoace font-semibold mb-1"
