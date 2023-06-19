@@ -11,10 +11,10 @@ const Footer = () => {
   return (
     <>
       <footer className=" py-4 bg-smoky-black ">
-        <div className="footer-wrapper container mx-auto text-center">
-          <div className="flex justify-between mb-4">
+        <div className="footer-wrapper container px-[50px] mx-auto text-center">
+          <div className="flex flex-col sm:flex-row justify-between sm:items-center">
             <Logo />
-            <nav className="text-right">
+            <nav className="text-left py-4 sm:text-right">
               <ul className="">
                 {navLinks.map((link) => (
                   <li className="menu-items" key={link.path}>
