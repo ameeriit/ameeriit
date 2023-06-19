@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo.svg";
+import Logo from "./Logo";
 
 import { useState, useEffect } from "react";
 
@@ -52,12 +52,7 @@ const Header = () => {
           <div className="site-title-nav flex justify-between items-center gap-12">
             <div className="site-title">
               <Link to="/">
-                <img
-                  className="invert-0 hover:opacity-[0.5]"
-                  src={logo}
-                  width={100}
-                  alt="logo"
-                />
+                <Logo />
               </Link>
             </div>
             <nav
