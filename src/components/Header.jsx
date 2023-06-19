@@ -28,10 +28,10 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { path: "/abt", name: "About" },
-    { path: "/exp", name: "Experience" },
-    { path: "/prj", name: "Projects" },
-    { path: "/blog", name: "Blogs" },
+    { path: "/", name: "About" },
+    { path: "/", name: "Experience" },
+    { path: "/", name: "Projects" },
+    { path: "/", name: "Blogs" },
   ];
 
   return (
