@@ -3,7 +3,7 @@ import siteLogo from "../assets/images/logo.svg";
 const Logo = () => {
   return (
     <div>
-      <img src={siteLogo} width={100} alt="" />
+      <img className="invert-[1]" src={siteLogo} width={100} alt="" />
     </div>
   );
 };

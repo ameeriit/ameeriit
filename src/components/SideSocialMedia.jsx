@@ -46,12 +46,12 @@ const SideSocialMedia = () => {
     if (sectionId === "section2") {
       return "#6147C6"; // Customize the color for the section with id "section2"
     }
-    return "white";
+    return "#FF9F1C";
   };
 
   return (
     <>
-      <div className="social-media-handles fixed top-[50%] left-2 translate-y-[-50%]  flex flex-col gap-4">
+      <div className="social-media-handles fixed top-[50%] left-1 translate-y-[-50%]  flex flex-col gap-4">
         {socialLinks.map((icon, index) => (
           <li key={index} className="list-none">
             <a className="block" href={icon.url}>

@@ -24,7 +24,7 @@ const Portfolio = () => {
   return (
     <section
       id="section1"
-      className="portfolio-section text-white pt-[40px] pb-[60px] px-[50px] bg-smoky-black"
+      className="portfolio-section text-black pt-[40px] pb-[60px] px-[50px] bg-smoky-black"
     >
       <div className="portfolio-wrapper container mx-auto">
         <h2

@@ -4,7 +4,7 @@ const Newsletter = () => {
   return (
     <section
       id="section1"
-      className="newsletter-section text-white pt-[40px] pb-[60px] px-[50px] bg-smoky-black"
+      className="newsletter-section text-black pt-[40px] pb-[60px] px-[50px] bg-smoky-black"
     >
       <div className="newsletter-wrapper container mx-auto">
         <h2

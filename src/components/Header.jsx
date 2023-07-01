@@ -1,31 +1,14 @@
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Header = () => {
   const [toggleHam, setToggleHam] = useState(true);
-  const [isFixed, setIsFixed] = useState(false);
 
   const handleHamClick = () => {
     setToggleHam(!toggleHam);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 200) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const navLinks = [
     { path: "/", name: "About" },
@@ -36,19 +19,11 @@ const Header = () => {
 
   return (
     <>
-      <span className="absolute z-[100] top-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] font-semibold font-itim text-red-600 text-center inline-block w-[100%]">
+      <span className="sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] font-semibold font-itim text-red-600 text-center inline-block w-[100%]">
         Website Under-Construction
       </span>
-      <header
-        className={`header-section ${
-          isFixed ? "fixed bg-iris" : "absolute bg-[inherit]"
-        } w-[100%] z-50 transition-all duration-500 ease-in-out `}
-      >
-        <div
-          className={`header-wrapper container mx-auto p-10 ${
-            isFixed ? "p-5" : ""
-          }`}
-        >
+      <header>
+        <div className="container mx-auto">
           <div className="site-title-nav flex justify-between items-center gap-12">
             <div className="site-title">
               <Link to="/">
@@ -68,7 +43,7 @@ const Header = () => {
                 {navLinks.map((link) => (
                   <li className="menu-items" key={link.path}>
                     <Link
-                      className="text-columbia-blue font-montserrat-normal text-lg hover:text-malachite"
+                      className="text-black font-comfortaa font-bold text-lg hover:text-malachite"
                       to={link.path}
                     >
                       {link.name}

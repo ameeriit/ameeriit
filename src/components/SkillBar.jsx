@@ -1,6 +1,5 @@
 import skillMore from "../assets/images/arrow_loop_right.svg";
 import CountUp from "react-countup";
-import whiteartban from "../assets/images/calligraphy-artist-hero-section-bg.svg";
 
 const SkillBar = () => {
   const skills = [
@@ -12,11 +11,6 @@ const SkillBar = () => {
     <section
       id="section2"
       className="skill-section text-smoky-black py-[60px] px-[50px]"
-      style={{
-        backgroundImage: `url(${whiteartban})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
     >
       <div className="skill-wrapper container mx-auto">
         <h2

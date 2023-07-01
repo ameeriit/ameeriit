@@ -6,47 +6,34 @@ module.exports = {
         jura: ["Jura", "sans-serif"],
         itim: ["Itim", "sans-serif"],
         brunoace: ["BrunoAce", "sans-serif"],
-        bulgatti: ["Bulgatti", "sans-serif"],
-        comfortaa: ["Comfortaa", "sans-serif"],
+        comfortaa: ["Comfortaa", "cursive"],
+        bulgatti: ["Bulgatti", "cursive"],
       },
       colors: {
-        skobeloff: "#116D6E",
-        "blue-sapphire": "#116A7B",
-        "dark-vanilla": "#CDC2AE",
-        "dirty-white": "#ECE5C7",
-        "columbia-blue": "#C2DEDC",
-        "blue-yonder": "#4F709C",
-        temptress: "#321E1E",
-        "cetacean-blue": "#0E0F34",
-        "picton-blue": "#45B1E8 ",
-        malachite: "#5FDB86",
-        iris: "#6147C6",
-        "smoky-black": "#0C0D0F",
-        "deep-blue": "#001F3F",
-        "deep-purple": "#0B1B33",
+        "green-cm": "#004D40",
+        "orange-cm": "#FF9F1C",
       },
-
-      // keyframes: {
-      //   blink: {
-      //     "0%, 100%": { transform: "rotate(-3deg)" },
-      //     "50%": { transform: "rotate(3deg)" },
-      //   },
-      //   typing: {
-      //     "100%": {
-      //       left: "100%",
-      //       margin: "0 15px",
-      //     },
-      //   },
-      //   slide: {
-      //     "100%": {
-      //       top: "-80px",
-      //     },
-      //   },
-      // },
-      // animation: {
-      //   ani: "typing 1.5s steps(9) infinite",
-      //   sli: "slide 3s steps(2) infinite",
-      // },
+      keyframes: {
+        wave: {
+          "0%": { transform: "rotate(0.0deg)" },
+          "10%": { transform: "rotate(14deg)" },
+          "20%": { transform: "rotate(-8deg)" },
+          "30%": { transform: "rotate(14deg)" },
+          "40%": { transform: "rotate(-4deg)" },
+          "50%": { transform: "rotate(10.0deg)" },
+          "60%": { transform: "rotate(0.0deg)" },
+          "100%": { transform: "rotate(0.0deg)" },
+        },
+        swing: {
+          "0%": { transform: "rotate(0)", transformOrigin: "center" },
+          "45%": { transform: "rotate(-45deg)", transformOrigin: "center" },
+          "75%": { transform: "rotate(75deg)", transformOrigin: "center" },
+        },
+      },
+      animation: {
+        "waving-hand": "wave 2s linear infinite",
+        "rotate-img": "swing 5s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

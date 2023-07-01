@@ -1,5 +1,4 @@
 import inImg from "../assets/images/inImg.png";
-import whiteartban from "../assets/images/calligraphy-artist-hero-section-bg.svg";
 
 const interestList = [
   { list: "Involvement in new software and hardware interaction projects." },
@@ -14,11 +13,6 @@ const Interests = () => {
     <section
       id="section2"
       className="interests-section pt-[40px] pb-[60px] px-[50px]"
-      style={{
-        backgroundImage: `url(${whiteartban})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
     >
       <div className="interests-wrapper container mx-auto text-smoky-black font-itim">
         <h2

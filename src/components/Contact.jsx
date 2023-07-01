@@ -1,16 +1,10 @@
 import map from "../assets/images/map.jpg";
-import whiteartban from "../assets/images/calligraphy-artist-hero-section-bg.svg";
 
 const Contact = () => {
   return (
     <section
       id="section2"
       className="contact-section pt-[40px] pb-[60px] px-[50px] text-smoky-black"
-      style={{
-        backgroundImage: `url(${whiteartban})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
     >
       <div className="contact-wrapper container mx-auto">
         <h2
