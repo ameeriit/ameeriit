@@ -1,15 +1,19 @@
 import Header from "./components/Header";
-import Footer from "./components/Footer";
-import PageRoutes from "./routes/PageRoutes";
-import SideSocialMedia from "./components/SideSocialMedia";
+import Banner from "./components/Banner";
+import Sidebar from "./components/Sidebar";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <PageRoutes />
-      <SideSocialMedia />
-      <Footer />
+      <div className="flex">
+        <Header className="w-[30%]" />
+        <main className="w-[70%]">
+          <div className="cm-container ml-auto">
+            <Banner />
+          </div>
+          <Sidebar />
+        </main>
+      </div>
     </>
   );
 };

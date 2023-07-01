@@ -1,83 +1,72 @@
-import { FaDownload } from "react-icons/fa";
+// import { FaDownload } from "react-icons/fa";
 import bannermy from "../assets/images/banner-my.svg";
-import bannerbg from "../assets/images/ban-bg.jpg";
-import Typed from "typed.js";
-import { useRef, useEffect } from "react";
+import arr from "../assets/images/arrow.svg";
+// import bannerbg from "../assets/images/ban-bg.jpg";
+// import Typed from "typed.js";
+// import { useRef, useEffect } from "react";
 
 const Banner = () => {
-  const rainbowStyle = {
-    backgroundImage:
-      "linear-gradient(-90deg, #adfbda 0, #35c3ff 30%, #fda399 50%, #76d880 70%, #ebf38b 90%, #adfbda 100%)",
-    backgroundSize: "100%",
-    backgroundRepeat: "repeat",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-    MozBackgroundClip: "text",
-    filter: "drop-shadow(0 0 2rem #000)",
-  };
+  // const rainbowStyle = {
+  //   backgroundImage:
+  //     "linear-gradient(-90deg, #adfbda 0, #35c3ff 30%, #fda399 50%, #76d880 70%, #ebf38b 90%, #adfbda 100%)",
+  //   backgroundSize: "100%",
+  //   backgroundRepeat: "repeat",
+  //   WebkitBackgroundClip: "text",
+  //   WebkitTextFillColor: "transparent",
+  //   MozBackgroundClip: "text",
+  //   filter: "drop-shadow(0 0 2rem #000)",
+  // };
 
-  const typedRef = useRef(null);
+  // const typedRef = useRef(null);
 
-  useEffect(() => {
-    const options = {
-      strings: ["Developer.", "Designer."],
-      typeSpeed: 100,
-      loop: true,
-    };
+  // useEffect(() => {
+  //   const options = {
+  //     strings: ["Developer.", "Designer."],
+  //     typeSpeed: 100,
+  //     loop: true,
+  //   };
 
-    const typed = new Typed(typedRef.current, options);
+  //   const typed = new Typed(typedRef.current, options);
 
-    return () => {
-      typed.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     typed.destroy();
+  //   };
+  // }, []);
+
+  const bannerList = [
+    { banli: "Crafting Digital Experiences." },
+    {
+      banli: "Transforming Ideas into Seamless Web Experiences. ",
+    },
+  ];
 
   return (
-    <section className="banner-section w-[100%] h-[100%] relative">
-      <div className="banner-img-wrapper absolute top-0 left-0 w-[100%] h-[100%] before:contents[''] before:bg-[iris] before:opacity-6 before:block before:w-[100%] before:h-[100%] before:absolute before:top-0 before:left-0 z-[-1]">
-        <img
-          src={bannerbg}
-          alt="banner.jpg"
-          className="w-[100%] h-[100%] object-cover"
-        />
-      </div>
-      <div className="banner-wrapper relative container mx-auto flex flex-col md:flex-row items-center justify-between px-10 pt-40 2xl:pt-60 pb-20 2xl:pb-60 gap-[30px] sm:gap-[50px] lg:gap-[70px]">
-        <div className="banner-img w-full lg:w-2/5">
-          <img
-            className="w-[280px] h-[100%] mx-auto"
-            src={bannermy}
-            alt="ban-logo"
-          />
-        </div>
-        <div className="banner-content w-full lg:w-3/5">
-          <span className="bg-temptress text-white p-2 rounded-lg">
-            Welcome, I'M
-          </span>
-          <h1 className="font-[itim] font-extrabold text-xl sm:text-5xl md:text-6xl lg:text-7xl mb-2 text-white">
-            <span
-              className=" font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-clip"
-              style={rainbowStyle}
-            >
-              Amrit Pokharel
-            </span>
-          </h1>
-
-          <div className="flex gap-2 flex-col md:flex-row mb-4 md:mb-0">
-            <p className="text-columbia-blue font-semibold text-[16px] md:text-[18px] lg:text-[24px] md:mb-6">
-              Web-
-              <span className="text-malachite" ref={typedRef}></span>
+    <section className="banner-section pt-[150px] pb-[60px]">
+      <div className="w-[100%] mx-auto">
+        <div className="banner-wrapper border-[1px] border-white">
+          <div className="banner-content w-[67.36%] text-white pl-[60px] py-[60px]">
+            <p className="welcome text-[24px]  border-[1px] border-white inline-block px-[14px] py-[4px] mb-[6px]">
+              Welcome I'M
             </p>
+            <br />
+            <div className="text-[24px] border-[1px] border-white inline-block px-[14px] pt-[32px] pb-[4px] px-[16px] mb-[6px]">
+              <p className="text-[64px] font-bulgatti">Amrit Pokharel</p>
+              <span className="font-comfortaa font-bold text-[64px]">
+                WEB-DEVELOPER
+              </span>
+            </div>
+            <ul className="border-[1px] border-white inline-block mb-[6px] pl-[30px] pr-[16px] py-[8px] relative before:block before:content-[''] before:w-[2px] before:h-[60%] before:bg-white before:absolute before:left-[16px] before:top-[50%] before:translate-y-[-50%]">
+              {bannerList.map((inlist, index) => (
+                <li className="" key={index}>
+                  {inlist.banli}
+                </li>
+              ))}
+            </ul>
+            <br />
+            <button className="border-[1px] border-white inline-block text-[24px] px-[14px] py-[4px]">
+              Contact Me
+            </button>
           </div>
-          <a
-            href="#_"
-            className="relative inline-block px-4 py-2 font-medium group"
-          >
-            <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-malachite group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-            <span className="absolute inset-0 w-full h-full bg-columbia-blue border-2 border-malachite group-hover:bg-malachite"></span>
-            <span className="relative text-cetacean-blue group-hover:text-white flex items-center gap-3">
-              Resume <FaDownload />
-            </span>
-          </a>
         </div>
       </div>
     </section>

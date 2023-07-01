@@ -6,6 +6,8 @@ module.exports = {
         jura: ["Jura", "sans-serif"],
         itim: ["Itim", "sans-serif"],
         brunoace: ["BrunoAce", "sans-serif"],
+        bulgatti: ["Bulgatti", "sans-serif"],
+        comfortaa: ["Comfortaa", "sans-serif"],
       },
       colors: {
         skobeloff: "#116D6E",
@@ -20,6 +22,8 @@ module.exports = {
         malachite: "#5FDB86",
         iris: "#6147C6",
         "smoky-black": "#0C0D0F",
+        "deep-blue": "#001F3F",
+        "deep-purple": "#0B1B33",
       },
 
       // keyframes: {
