@@ -59,6 +59,10 @@
   src: url("./assets/fonts/Comfortaa-SemiBold.ttf") format("truetype");
   font-weight: semibold;
 }
+@font-face {
+  font-family: "Bulgatti";
+  src: url("./assets/fonts/Bulgatti.ttf") format("truetype");
+}
 
 body {
   font-family: "Comfortaa", sans-serif;
