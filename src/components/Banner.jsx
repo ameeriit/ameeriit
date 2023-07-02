@@ -5,9 +5,20 @@ import hi from "../assets/images/hi.png";
 import banBgElem from "../assets/images/bannerbgelement.svg";
 import mySvg from "../assets/images/my-svg.svg";
 import nepal from "../assets/images/greater-nepal.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Banner = () => {
   const typedRef = useRef(null);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      offset: 200,
+      once: true,
+    });
+  }, []);
 
   useEffect(() => {
     const options = {
@@ -39,7 +50,7 @@ const Banner = () => {
         alt=""
       />
       <div className="container mx-auto flex items-center relative px-[40px] max-[320px]:pr-[15px] max-[320px]:pl-[25px]">
-        <div className="banner-content w-full lg:w-3/5">
+        <div className="banner-content w-full lg:w-3/5 " data-aos="fade-right">
           <span className="bg-temptress font-bold text-white rounded inline-block bg-orange-cm px-[10px] pt-[4px] pb-[2px] mb-[40px] md:mb-[60px]">
             Welcome, I{"\u0060"}M
           </span>
@@ -90,7 +101,12 @@ const Banner = () => {
           </div>
         </div>
         <div className="absolute top-[50%] right-0 translate-y-[-50%] overflow-hidden opacity-[0.6] z-[-1]">
-          <img className="animate-rotate-img" src={banBgElem} alt="" />
+          <img
+            className="animate-rotate-img"
+            src={banBgElem}
+            alt=""
+            data-aos="fade"
+          />
           <img
             className="absolute top-[42%]
           left-[45%] translate-[-50%]"
