@@ -54,7 +54,7 @@ const SkillBar = () => {
   ];
   return (
     <section id="section2" className="skill-section pt-[60px] px-[15px] ">
-      <div className="skill-wrapper flex justify-center" data-aos="fade-right">
+      <div className="skill-wrapper flex justify-center">
         <div className="flex flex-wrap gap-5 sm:gap-10 md:gap-20 justify-center text-center mb-[20px] sm:mb-[40px] md:mb-[60px]">
           {skills.map((skill, index) => (
             <div
@@ -79,7 +79,7 @@ const SkillBar = () => {
       </div>
       <div
         className="skills-more max-w-[750px] mx-auto flex flex-col gap-4 lg:gap-20 lg:flex-row"
-        data-aos="fade-left"
+        data-aos="flip-up"
       >
         <div>
           <h3
