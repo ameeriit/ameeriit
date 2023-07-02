@@ -45,7 +45,7 @@ const Banner = () => {
           </span>
           <br />
           <h1
-            className="font-bulgatti font-extrabold text-green-cm max-[320px]:text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-10 inline-block relative"
+            className="font-bulgatti font-extrabold text-green-cm text-2xl max-[320px]:text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-10 inline-block relative"
             style={{ textShadow: "0px 11px 10px rgba(81,67,21,0.8)" }}
           >
             Amrit Pokharel
