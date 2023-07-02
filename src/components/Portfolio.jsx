@@ -37,6 +37,9 @@ const Portfolio = () => {
         >
           PROJECTS
         </h2>
+        <span className="block text-center mb-4 font-semibold">
+          Updating Soon
+        </span>
         <div className="project-showcase flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6">
           {projectImages.map((project, index) => (
             <div

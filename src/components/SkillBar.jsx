@@ -25,7 +25,7 @@ const SkillBar = () => {
               style={{ border: `10px solid ${skill.color}` }}
             >
               <CountUp
-                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-2 block"
+                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-2 block font-itim"
                 end={skill.percentage}
                 enableScrollSpy="true"
                 scrollSpyDelay="5"

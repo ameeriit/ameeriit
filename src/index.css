@@ -23,6 +23,10 @@
   font-family: "Bulgatti";
   src: url("./assets/fonts/Bulgatti.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Itim";
+  src: url("./assets/fonts/Itim-Regular.ttf") format("truetype");
+}
 
 body {
   font-family: "Comfortaa", sans-serif;

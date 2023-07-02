@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         comfortaa: ["Comfortaa", "cursive"],
         bulgatti: ["Bulgatti", "cursive"],
+        itim: ["Itim", "sans-serif"],
       },
       colors: {
         "green-cm": "#004D40",
