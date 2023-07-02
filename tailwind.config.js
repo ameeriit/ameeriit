@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        comfortaa: ["Comfortaa", "cursive"],
+        comfortaa: ["Comfortaa", "sans-serif"],
         bulgatti: ["Bulgatti", "cursive"],
         itim: ["Itim", "sans-serif"],
       },
