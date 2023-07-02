@@ -74,7 +74,7 @@ const Banner = () => {
               <FaLocationArrow />
               -Nepal, Kathmandu, Sitapaila
             </span>
-            <ul className="text-[16px] font-bold border-2 relative border-orange-cm px-4 py-1 inline-block mb-4 before:content-[''] before:block before:w-[2px] before:h-[80%] before:rounded-lg before:absolute before:left-[8px] before:bg-black">
+            <ul className="text-[14px] font-bold border-2 relative border-orange-cm px-4 py-1 inline-block mb-4 before:content-[''] before:block before:w-[2px] before:h-[80%] before:rounded-lg before:absolute before:left-[8px] before:bg-black">
               {bannerList.map((inlist, index) => (
                 <li className="" key={index}>
                   {inlist.banli}
