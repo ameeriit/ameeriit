@@ -91,7 +91,7 @@ const SkillBar = () => {
             alt=""
           />
         </div>
-        <ul className="flex flex-[80%] flex-wrap gap-8 md:gap-0 justify-center md:justify-between">
+        <ul className="flex flex-[80%] flex-wrap gap-8 md:gap-0 justify-between">
           {skillsdetails.map((details, index) => (
             <li
               className="text-[20px] font-itim font-bold uppercase"

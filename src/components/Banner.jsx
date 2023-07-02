@@ -49,12 +49,6 @@ const Banner = () => {
             style={{ textShadow: "0px 11px 10px rgba(81,67,21,0.8)" }}
           >
             Amrit Pokharel
-            {/* <span
-              className=" font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-clip"
-              style={rainbowStyle}
-            >
-              Amrit Pokharel
-            </span> */}
             <img
               className="absolute top-[-45px] right-[-25px] animate-waving-hand"
               src={hi}
