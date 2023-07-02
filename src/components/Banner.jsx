@@ -45,7 +45,7 @@ const Banner = () => {
           </span>
           <br />
           <h1
-            className="font-bulgatti font-extrabold text-green-cm text-4xl max-[320px]:text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-10 inline-block relative"
+            className="font-bulgatti font-extrabold text-green-cm max-[320px]:text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-10 inline-block relative"
             style={{ textShadow: "0px 11px 10px rgba(81,67,21,0.8)" }}
           >
             Amrit Pokharel
@@ -64,17 +64,17 @@ const Banner = () => {
           </h1>
 
           <div className="flex gap-2 flex-col md:flex-row md:mb-0 ">
-            <p className="font-comfortaa uppercase text-green-cm font-semibold text-xl max-[320px]:text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
+            <p className="font-comfortaa uppercase text-green-cm font-semibold max-[320px]:text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
               Web-
               <span className="text-[#ff4f3c] " ref={typedRef}></span>
             </p>
           </div>
           <div>
-            <span className="mb-4 md:mb-6 text-[10px] sm:text-[12px] md:text-[14px] font-semibold flex items-center">
+            <span className="mb-4 md:mb-6 text-[14px] font-semibold flex items-center">
               <FaLocationArrow />
               -Nepal, Kathmandu, Sitapaila
             </span>
-            <ul className="text-[12px] sm:text-[14px] md:text-[16px] font-bold border-2 relative border-orange-cm px-4 py-1 inline-block mb-4 before:content-[''] before:block before:w-[2px] before:h-[80%] before:rounded-lg before:absolute before:left-[8px] before:bg-black">
+            <ul className="text-[12px] text-[16px] font-bold border-2 relative border-orange-cm px-4 py-1 inline-block mb-4 before:content-[''] before:block before:w-[2px] before:h-[80%] before:rounded-lg before:absolute before:left-[8px] before:bg-black">
               {bannerList.map((inlist, index) => (
                 <li className="" key={index}>
                   {inlist.banli}
