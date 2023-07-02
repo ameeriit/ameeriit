@@ -58,7 +58,9 @@ const Portfolio = () => {
                 </ul>
               </ul>
             ))}
-            <span className="text-orange-600">Many more...</span>
+            <button className="text-orange-600 transition-all hover:text-blue-600">
+              Many more...
+            </button>
           </div>
         </div>
       </div>

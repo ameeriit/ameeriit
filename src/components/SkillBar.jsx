@@ -82,10 +82,7 @@ const SkillBar = () => {
         data-aos="flip-up"
       >
         <div>
-          <h3
-            className=" text-blue-600 inline-block relative text-[24px] font-semibold mb-[10px] 
-}"
-          >
+          <h3 className=" text-blue-600 inline-block relative text-[24px] font-semibold mb-[10px]">
             Skills
           </h3>
           <img
