@@ -19,18 +19,12 @@ const Footer = () => {
     <>
       <footer className=" py-4 text-black-cm font-bold pb-8">
         <div className="footer-wrapper container px-[50px] mx-auto text-center flex-col sm:flex-row sm:flex justify-between items-center">
-          <div
-            className="max-w-[200px] mx-auto sm:mx-[0] mb-[25px] sm:mb-[0]"
-            data-aos="fade-right"
-          >
+          <div className="max-w-[200px] mx-auto sm:mx-[0] mb-[25px] sm:mb-[0]">
             <p className="text-[14px]">
               Designed & Developed by Amrit Pokharel &copy; 2022.
             </p>
           </div>
-          <ul
-            className="flex justify-center gap-3 text-green-cm"
-            data-aos="fade-left"
-          >
+          <ul className="flex justify-center gap-3 text-green-cm">
             {socialLinks.map((icon, index) => (
               <li key={index} className="list-none">
                 <a className="block" href={icon.url}>
