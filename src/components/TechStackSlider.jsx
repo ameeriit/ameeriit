@@ -38,7 +38,7 @@ const techSlides = [
 const TechStackSlider = () => {
   return (
     <>
-      <div id="section1" className="tech-section">
+      <section id="section1" className="tech-section py-[50px]">
         <Splide
           aria-label="My Favorite Images"
           options={{
@@ -87,7 +87,7 @@ const TechStackSlider = () => {
             </SplideSlide>
           ))}
         </Splide>
-      </div>
+      </section>
     </>
   );
 };

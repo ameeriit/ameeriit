@@ -1,76 +1,53 @@
-import projimg1 from "../assets/images/proj.png";
-import projimg2 from "../assets/images/proj.png";
-import projimg3 from "../assets/images/proj.png";
-
 const Portfolio = () => {
-  const projectImages = [
+  const projects = [
     {
-      image: projimg1,
-      demoUrl: "https://www.example.com/demo1",
-      codeUrl: "https://www.example.com/code1",
+      name: "Ecommerce",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat error, architecto qui in, laudantium ullam veritatis cupiditate, nostrum sit officia officiis assumenda ex libero repudiandae? Vel temporibus facere corporis natus!",
+      languages: ["HTML", "CSS", "JavaScript"],
     },
     {
-      image: projimg2,
-      demoUrl: "https://www.example.com/demo2",
-      codeUrl: "https://www.example.com/code2",
+      name: "Portfolio Website",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat error, architecto qui in, laudantium ullam veritatis cupiditate, nostrum sit officia officiis assumenda ex libero repudiandae? Vel temporibus facere corporis natus!",
+      languages: ["HTML", "CSS", "React"],
     },
     {
-      image: projimg3,
-      demoUrl: "https://www.example.com/demo3",
-      codeUrl: "https://www.example.com/code3",
+      name: "Blog App",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat error, architecto qui in, laudantium ullam veritatis cupiditate, nostrum sit officia officiis assumenda ex libero repudiandae? Vel temporibus facere corporis natus!",
+      languages: ["HTML", "CSS", "Node.js", "Express"],
     },
   ];
 
-  const boxShadowStyle = {
-    boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-  };
-
   return (
-    <section
-      id="section1"
-      className="portfolio-section text-black pt-[40px] pb-[60px] px-[50px]"
-    >
-      <div className="portfolio-wrapper container mx-auto">
-        <h2
-          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10"
-          style={{ textShadow: "0 2px 6px black" }}
-        >
-          PROJECTS
-        </h2>
-        <span className="block text-center mb-4 font-semibold">
-          Updating Soon
-        </span>
-        <div className="project-showcase flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6">
-          {projectImages.map((project, index) => (
-            <div
-              className="project w-[90%] md:w-[30%] sm:w-[40%] "
-              key={index}
-              style={boxShadowStyle}
-            >
-              <a href={project.demoUrl}>
-                <img
-                  className="mb-4 md:mb-0"
-                  src={project.image}
-                  alt=""
-                  style={{ width: "100%" }}
-                />
-              </a>
-              <div className="flex justify-between md:p-8 flex-col md:flex-row">
-                <a
-                  href={project.demoUrl}
-                  className="font-semibold text-sm md:text-xl mb-2 md:mb-0"
-                >
-                  Demo
-                </a>
-                <a
-                  href={project.codeUrl}
-                  className="font-semibold text-sm md:text-xl"
-                >
-                  Code
-                </a>
-              </div>
-            </div>
-          ))}
+    <section className="project-section pt-[70px] pb-[20px] px-[20px]">
+      <div className="container mx-auto">
+        <div className="project-wrapper max-w-[1000px] mx-auto flex-col gap-8 sm:flex sm:flex-row">
+          <h5 className="section-title mb-[20px] sm:mb-[0] text-2xl w-full sm:w-1/4 text-left sm:text-right text-blue-600">
+            Projects
+          </h5>
+          <div className="project-description w-full sm:w-3/4">
+            {projects.map((prj, index) => (
+              <ul className="mb-8" key={index}>
+                <li className="font-itim font-bold text-[20px] uppercase mb-[10px]">
+                  {prj.name}
+                </li>
+                <li className="text-[14px] mb-[10px]">{prj.content}</li>
+                <ul className="flex flex-wrap gap-3">
+                  {prj.languages.map((language, langIndex) => (
+                    <li
+                      className="text-[14px] block border-[1px] border-blue-600 px-[8px] pt-[4px] pb-[3px] rounded-[4px] text-blue-600"
+                      key={langIndex}
+                    >
+                      {language}
+                    </li>
+                  ))}
+                </ul>
+              </ul>
+            ))}
+            <span className="text-orange-600">Many more...</span>
+          </div>
         </div>
       </div>
     </section>

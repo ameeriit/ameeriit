@@ -1,6 +1,5 @@
 import skillMore from "../assets/images/arrow_loop_right.svg";
 import CountUp from "react-countup";
-import TechStackSlider from "./TechStackSlider";
 
 const SkillBar = () => {
   const skills = [
@@ -8,15 +7,54 @@ const SkillBar = () => {
     { name: "CSS", percentage: 80, color: "#E91E63" },
     { name: "JavaScript", percentage: 70, color: "#9C27B0" },
   ];
+
+  const skillsdetails = [
+    {
+      skillDesc: "Language",
+      skillName: [
+        "Javascript",
+        "HTML",
+        "CSS",
+        "Sass",
+        "Less",
+        "Tailwind",
+        "Bootstrap",
+        "SQL",
+      ],
+    },
+    {
+      skillDesc: "Frameworks",
+      skillName: ["React", "Wordpress"],
+    },
+    {
+      skillDesc: "Tools",
+      skillName: [
+        "Bash",
+        "Git & Github",
+        "Gulp",
+        "Chrome Dev Tools",
+        "Postman",
+        "MongoDB",
+      ],
+    },
+    {
+      skillDesc: "Design",
+      skillName: [
+        "Sketch",
+        "InDesign",
+        "Prototyping",
+        "Wire Framing",
+        "Unit Testing",
+        "Figma",
+        "Zeplin",
+        "PhotoShop",
+        "Illustrator",
+      ],
+    },
+  ];
   return (
-    <section id="section2" className="skill-section py-[60px] px-[50px] ">
-      <div className="skill-wrapper container mx-auto">
-        <h2
-          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10]"
-          style={{ textShadow: "0 2px 6px black" }}
-        >
-          Skills
-        </h2>
+    <section id="section2" className="skill-section pt-[60px] px-[15px] ">
+      <div className="skill-wrapper flex justify-center">
         <div className="flex flex-wrap gap-5 sm:gap-10 md:gap-20 justify-center text-center mb-[20px] sm:mb-[40px] md:mb-[60px]">
           {skills.map((skill, index) => (
             <div
@@ -39,22 +77,41 @@ const SkillBar = () => {
           ))}
         </div>
       </div>
-      <div className="skills-more max-w-[850px] mx-auto flex gap-[20px] mb-[60px]">
-        <img
-          className=" w-[40px] sm:w-[60px] md:w-[80px]"
-          src={skillMore}
-          alt=""
-        />
+      <div className="skills-more max-w-[750px] mx-auto flex flex-col gap-4 lg:gap-20 lg:flex-row">
         <div>
-          <h3 className=" inline-block relative text-sm sm:text-base md:text-lg font-semibold before:contents-[''] before:block before:h-[3px] before:w-[120%] before:bg-black before:absolute before:bottom-[-3px] before:left-0 mb-[10px]">
-            More...
+          <h3
+            className=" text-blue-600 inline-block relative text-[24px] font-semibold mb-[10px] 
+}"
+          >
+            Skills
           </h3>
-          <p className="text-xs sm:text-sm md:text-base font-semibold">
-            React, Wordpress
-          </p>
+          <img
+            className=" w-[40px] sm:w-[60px] md:w-[80px]"
+            src={skillMore}
+            alt=""
+          />
         </div>
+        <ul className="flex flex-[80%] flex-wrap gap-8 md:gap-0 justify-center md:justify-between">
+          {skillsdetails.map((details, index) => (
+            <li
+              className="text-[20px] font-itim font-bold uppercase"
+              key={index}
+            >
+              {details.skillDesc}
+              <ul className="pt-[8px]">
+                {details.skillName.map((skillName, exindex) => (
+                  <li
+                    className="text-[14px] font-comfortaa font-medium capitalize"
+                    key={exindex}
+                  >
+                    {skillName}
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
       </div>
-      <TechStackSlider />
     </section>
   );
 };

@@ -1,22 +1,16 @@
-import mypersonal from "../assets/images/my.png";
 import skillimg from "../assets/images/skill-map.jpg";
 
 const SkillMap = () => {
   return (
     <section
       id="section2"
-      className="px-[40px] py-[40px] sm:px-[100px] sm:py-12 bg-gradient-to-r from-green-300 via-orange-200"
+      className="px-[25px] py-[40px] sm:px-[100px] sm:py-12 bg-gradient-to-r from-green-300 via-orange-200"
     >
       <div className="skillmap-wrapper container mx-auto ">
         <div className="flex flex-col gap-10">
           <div className="flex gap-2 sm:gap-6 items-center justify-center">
-            <img
-              className="w-[40px] sm:w-[60px] md:w-[80px] "
-              src={mypersonal}
-              alt=""
-            />
             <div>
-              <p className="font-semibold text-base sm:text-lg md:text-xl">
+              <p className="text-blue-600 font-semibold text-base sm:text-lg md:text-xl">
                 ameeriit
               </p>
               <p className="text-xs sm:text-sm md:text-base">Frontend-Dev</p>

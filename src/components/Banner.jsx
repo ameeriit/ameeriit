@@ -4,6 +4,7 @@ import { useRef, useEffect } from "react";
 import hi from "../assets/images/hi.png";
 import banBgElem from "../assets/images/bannerbgelement.svg";
 import mySvg from "../assets/images/my-svg.svg";
+import nepal from "../assets/images/greater-nepal.svg";
 
 const Banner = () => {
   const typedRef = useRef(null);
@@ -31,15 +32,20 @@ const Banner = () => {
   ];
 
   return (
-    <section className="banner-section w-[100%] h-[100%] relative py-[60px] md:py-[80px] lg:py-[80px] xl:py-[100px] 2xl:py-[220px] ">
+    <section className="banner-section w-[100%] h-[100%] relative py-[60px] md:py-[80px] lg:py-[80px] xl:py-[100px] 2xl:py-[230px] ">
+      <img
+        className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-[0.15]"
+        src={nepal}
+        alt=""
+      />
       <div className="container mx-auto flex items-center relative px-[40px] max-[320px]:pr-[15px] max-[320px]:pl-[25px]">
         <div className="banner-content w-full lg:w-3/5">
-          <span className="bg-temptress font-bold text-white p-2 rounded inline-block bg-orange-cm px-[20px] mb-[40px] md:mb-[60px]">
+          <span className="bg-temptress font-bold text-white rounded inline-block bg-orange-cm px-[10px] pt-[4px] pb-[2px] mb-[40px] md:mb-[60px]">
             Welcome, I{"\u0060"}M
           </span>
           <br />
           <h1
-            className="font-bulgatti font-extrabold text-green-cm text-4xl max-[320px]:text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-8 inline-block relative"
+            className="font-bulgatti font-extrabold text-green-cm text-4xl max-[320px]:text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-10 inline-block relative"
             style={{ textShadow: "0px 11px 10px rgba(81,67,21,0.8)" }}
           >
             Amrit Pokharel
