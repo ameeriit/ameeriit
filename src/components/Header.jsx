@@ -23,7 +23,7 @@ const Header = () => {
         Website Under-Construction
       </span>
       <header>
-        <div className="container mx-auto">
+        <div className="container mx-auto px-[40px]">
           <div className="site-title-nav flex justify-between items-center gap-12">
             <div className="site-title">
               <Link to="/">

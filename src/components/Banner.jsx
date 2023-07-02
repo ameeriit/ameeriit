@@ -93,7 +93,7 @@ const Banner = () => {
           <img className="animate-rotate-img" src={banBgElem} alt="" />
           <img
             className="absolute top-[42%]
-          left-[45%] translate-[-50%] "
+          left-[45%] translate-[-50%]"
             width={60}
             src={mySvg}
             alt=""

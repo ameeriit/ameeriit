@@ -5,49 +5,9 @@
 /* font family */
 
 @font-face {
-  font-family: "Jura";
-  src: url("./assets/fonts/Jura-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Jura";
-  src: url("./assets/fonts/Jura-Light.ttf") format("truetype");
-  font-weight: light;
-}
-@font-face {
-  font-family: "Jura";
-  src: url("./assets/fonts/Jura-Medium.ttf") format("truetype");
-  font-weight: medium;
-}
-@font-face {
-  font-family: "Jura";
-  src: url("./assets/fonts/Jura-Regular.ttf") format("truetype");
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Jura";
-  src: url("./assets/fonts/Jura-SemiBold.ttf") format("truetype");
-  font-weight: semibold;
-}
-@font-face {
-  font-family: "Itim";
-  src: url("./assets/fonts/Itim-Regular.ttf") format("truetype");
-  font-weight: normal;
-}
-@font-face {
-  font-family: "BrunoAce";
-  src: url("./assets/fonts/BrunoAce-Regular.ttf") format("truetype");
-  font-weight: normal;
-}
-@font-face {
   font-family: "Comfortaa";
   src: url("./assets/fonts/Comfortaa-Bold.ttf") format("truetype");
   font-weight: bold;
-}
-@font-face {
-  font-family: "Comfortaa";
-  src: url("./assets/fonts/Comfortaa-Light.ttf") format("truetype");
-  font-weight: light;
 }
 @font-face {
   font-family: "Comfortaa";

@@ -3,9 +3,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        jura: ["Jura", "sans-serif"],
-        itim: ["Itim", "sans-serif"],
-        brunoace: ["BrunoAce", "sans-serif"],
         comfortaa: ["Comfortaa", "cursive"],
         bulgatti: ["Bulgatti", "cursive"],
       },
