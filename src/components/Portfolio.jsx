@@ -21,10 +21,14 @@ const Portfolio = () => {
     },
   ];
 
+  const boxShadowStyle = {
+    boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+  };
+
   return (
     <section
       id="section1"
-      className="portfolio-section text-white pt-[40px] pb-[60px] px-[50px] bg-black"
+      className="portfolio-section text-black pt-[40px] pb-[60px] px-[50px]"
     >
       <div className="portfolio-wrapper container mx-auto">
         <h2
@@ -35,7 +39,11 @@ const Portfolio = () => {
         </h2>
         <div className="project-showcase flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6">
           {projectImages.map((project, index) => (
-            <div className="project w-[90%] md:w-[30%] sm:w-[40%]" key={index}>
+            <div
+              className="project w-[90%] md:w-[30%] sm:w-[40%] "
+              key={index}
+              style={boxShadowStyle}
+            >
               <a href={project.demoUrl}>
                 <img
                   className="mb-4 md:mb-0"

@@ -18,21 +18,22 @@
 //     ],
 //   },
 // ];
+import globalBg from "../assets/images/magicpattern.png";
 
 const About = () => {
   return (
     <>
       <section
         id="section1"
-        className="about-section text-white bg-black py-[60px] px-[50px]"
+        className="about-section text-white py-[60px] px-[50px] z-[-1] relative before:content-[''] before:absolute before:bg-green-700 before:bg-opacity-[0.6] before:block before:w-[100%] before:h-[100%] before:top-0 before:left-0 before:z-[-1]"
+        style={{
+          backgroundImage: `url(${globalBg})`,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
       >
         <div className="container mx-auto">
-          <h2
-            className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-1"
-            style={{ textShadow: "0 2px 6px black" }}
-          >
-            ABOUT
-          </h2>
           <div className="lg:w-[600px] mx-auto">
             <p className=" text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] text-center">
               "Passionate and driven Frontend Developer. Experienced in

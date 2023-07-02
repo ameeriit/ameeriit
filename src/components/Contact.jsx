@@ -1,10 +1,17 @@
 import map from "../assets/images/map.jpg";
+import magicDash from "../assets/images/magic-dash.svg";
 
 const Contact = () => {
   return (
     <section
       id="section2"
       className="contact-section pt-[40px] pb-[60px] px-[50px] text-black"
+      style={{
+        backgroundImage: `url(${magicDash})`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
     >
       <div className="contact-wrapper container mx-auto">
         <h2

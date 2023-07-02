@@ -57,19 +57,19 @@ const Header = () => {
               className="ham-btn flex flex-col items-end md:hidden z-50"
             >
               <span
-                className={`block w-[32px] h-[3px] bg-malachite mb-[5px] transition-all ${
+                className={`block w-[32px] h-[3px] bg-black mb-[5px] transition-all ${
                   toggleHam
                     ? ""
                     : "rotate-[45deg] translate-x-[6px] translate-y-[8px]"
                 }`}
               ></span>
               <span
-                className={`block w-[20px] h-[3px] bg-malachite transition-all ${
+                className={`block w-[20px] h-[3px] bg-black transition-all ${
                   toggleHam ? "" : "translate-x-4 opacity-0 "
                 }`}
               ></span>
               <span
-                className={`block w-[12px] h-[3px] bg-malachite mt-[5px] transition-all ${
+                className={`block w-[12px] h-[3px] bg-black mt-[5px] transition-all ${
                   toggleHam
                     ? ""
                     : "w-[32px] rotate-[-45deg] translate-x-[6px] translate-y-[-8px]"

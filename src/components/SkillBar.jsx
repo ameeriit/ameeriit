@@ -1,5 +1,6 @@
 import skillMore from "../assets/images/arrow_loop_right.svg";
 import CountUp from "react-countup";
+import TechStackSlider from "./TechStackSlider";
 
 const SkillBar = () => {
   const skills = [
@@ -8,7 +9,7 @@ const SkillBar = () => {
     { name: "JavaScript", percentage: 70, color: "#9C27B0" },
   ];
   return (
-    <section id="section2" className="skill-section py-[60px] px-[50px]">
+    <section id="section2" className="skill-section py-[60px] px-[50px] ">
       <div className="skill-wrapper container mx-auto">
         <h2
           className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10]"
@@ -38,7 +39,7 @@ const SkillBar = () => {
           ))}
         </div>
       </div>
-      <div className="skills-more max-w-[850px] mx-auto flex gap-[20px]">
+      <div className="skills-more max-w-[850px] mx-auto flex gap-[20px] mb-[60px]">
         <img
           className=" w-[40px] sm:w-[60px] md:w-[80px]"
           src={skillMore}
@@ -53,6 +54,7 @@ const SkillBar = () => {
           </p>
         </div>
       </div>
+      <TechStackSlider />
     </section>
   );
 };
