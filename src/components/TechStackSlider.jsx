@@ -38,7 +38,7 @@ const techSlides = [
 const TechStackSlider = () => {
   return (
     <>
-      <section id="section1" className="tech-section py-[70px] bg-smoky-black">
+      <section id="section1" className="tech-section py-[70px] bg-black">
         <Splide
           aria-label="My Favorite Images"
           options={{

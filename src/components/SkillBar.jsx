@@ -8,13 +8,10 @@ const SkillBar = () => {
     { name: "JavaScript", percentage: 70, color: "#9C27B0" },
   ];
   return (
-    <section
-      id="section2"
-      className="skill-section text-smoky-black py-[60px] px-[50px]"
-    >
+    <section id="section2" className="skill-section py-[60px] px-[50px]">
       <div className="skill-wrapper container mx-auto">
         <h2
-          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10 font-[itim]"
+          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10]"
           style={{ textShadow: "0 2px 6px black" }}
         >
           Skills
@@ -27,14 +24,14 @@ const SkillBar = () => {
               style={{ border: `10px solid ${skill.color}` }}
             >
               <CountUp
-                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-itim mb-2 block"
+                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-2 block"
                 end={skill.percentage}
                 enableScrollSpy="true"
                 scrollSpyDelay="5"
                 scrollSpyOnce="true"
                 suffix="%"
               ></CountUp>
-              <p className="text-base sm:text-lg lg:text-2xl font-brunoace font-semibold">
+              <p className="text-base sm:text-lg lg:text-2xl font-semibold">
                 {skill.name}
               </p>
             </div>
@@ -48,10 +45,10 @@ const SkillBar = () => {
           alt=""
         />
         <div>
-          <h3 className=" inline-block font-brunoace relative text-sm sm:text-base md:text-lg font-semibold before:contents-[''] before:block before:h-[3px] before:w-[120%] before:bg-smoky-black before:absolute before:bottom-[-3px] before:left-0 mb-[10px]">
+          <h3 className=" inline-block relative text-sm sm:text-base md:text-lg font-semibold before:contents-[''] before:block before:h-[3px] before:w-[120%] before:bg-black before:absolute before:bottom-[-3px] before:left-0 mb-[10px]">
             More...
           </h3>
-          <p className="font-jura text-xs sm:text-sm md:text-base font-semibold">
+          <p className="text-xs sm:text-sm md:text-base font-semibold">
             React, Wordpress
           </p>
         </div>

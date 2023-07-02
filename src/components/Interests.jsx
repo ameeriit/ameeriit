@@ -14,15 +14,15 @@ const Interests = () => {
       id="section2"
       className="interests-section pt-[40px] pb-[60px] px-[50px]"
     >
-      <div className="interests-wrapper container mx-auto text-smoky-black font-itim">
+      <div className="interests-wrapper container mx-auto text-black">
         <h2
-          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10 font-[itim] "
+          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10 "
           style={{ textShadow: "0 2px 6px black" }}
         >
           INTERESTS
         </h2>
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <ul className="content-img-wrapper mb-16 md:mb-0 h-fit ml-10 relative before:content before:block before:w-[3px] before:h-[110%] before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[-20px] before:bg-smoky-black">
+          <ul className="content-img-wrapper mb-16 md:mb-0 h-fit ml-10 relative before:content before:block before:w-[3px] before:h-[110%] before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[-20px] before:bg-black">
             {interestList.map((inList, index) => (
               <li
                 className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]"

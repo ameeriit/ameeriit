@@ -16,12 +16,12 @@ const SkillMap = () => {
               alt=""
             />
             <div>
-              <p className="font-itim font-semibold text-base sm:text-lg md:text-xl">
+              <p className="font-semibold text-base sm:text-lg md:text-xl">
                 ameeriit
               </p>
               <p className="text-xs sm:text-sm md:text-base">Frontend-Dev</p>
             </div>
-            <p className="text-xs sm:text-sm md:text-base bg-smoky-black text-white rounded-lg px-6 py-3 relative before:contents-[''] before:block before:w-[16px] before:h-[16px] before:bg-smoky-black before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[-5px] before:rotate-[45deg]">
+            <p className="text-xs sm:text-sm md:text-base bg-black text-white rounded-lg px-6 py-3 relative before:contents-[''] before:block before:w-[16px] before:h-[16px] before:bg-black before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[-5px] before:rotate-[45deg]">
               I want to learn new things keep exploring and have fun everyday!
             </p>
           </div>

@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <>
-      <span className="sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] font-semibold font-itim text-red-600 text-center inline-block w-[100%]">
+      <span className="sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] font-semibold text-red-600 text-center inline-block w-[100%]">
         Website Under-Construction
       </span>
       <header>
@@ -43,7 +43,7 @@ const Header = () => {
                 {navLinks.map((link) => (
                   <li className="menu-items" key={link.path}>
                     <Link
-                      className="text-black font-comfortaa font-bold text-lg hover:text-malachite"
+                      className="text-black font-bold text-lg"
                       to={link.path}
                     >
                       {link.name}

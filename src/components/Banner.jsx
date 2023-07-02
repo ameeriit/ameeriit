@@ -60,7 +60,7 @@ const Banner = () => {
           <div className="flex gap-2 flex-col md:flex-row md:mb-0 ">
             <p className="font-comfortaa uppercase text-green-cm font-semibold text-xl max-[320px]:text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
               Web-
-              <span className="text-orange-cm " ref={typedRef}></span>
+              <span className="text-[#ff4f3c] " ref={typedRef}></span>
             </p>
           </div>
           <div>

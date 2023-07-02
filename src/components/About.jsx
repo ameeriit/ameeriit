@@ -24,17 +24,17 @@ const About = () => {
     <>
       <section
         id="section1"
-        className="about-section bg-smoky-black py-[60px] px-[50px]"
+        className="about-section text-white bg-black py-[60px] px-[50px]"
       >
         <div className="container mx-auto">
           <h2
-            className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10 font-[itim] text-black"
+            className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-1"
             style={{ textShadow: "0 2px 6px black" }}
           >
             ABOUT
           </h2>
           <div className="lg:w-[600px] mx-auto">
-            <p className="text-black text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] text-center">
+            <p className=" text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] text-center">
               "Passionate and driven Frontend Developer. Experienced in
               designing and developing stunning websites and user interfaces,
               committed to delivering high-quality work, and staying up-to-date

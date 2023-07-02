@@ -4,11 +4,11 @@ const Newsletter = () => {
   return (
     <section
       id="section1"
-      className="newsletter-section text-black pt-[40px] pb-[60px] px-[50px] bg-smoky-black"
+      className="newsletter-section text-white pt-[40px] pb-[60px] px-[50px] bg-black"
     >
       <div className="newsletter-wrapper container mx-auto">
         <h2
-          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10 font-[itim]"
+          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10]"
           style={{ textShadow: "0 2px 6px black" }}
         >
           NEWSLETTER
@@ -24,7 +24,7 @@ const Newsletter = () => {
         >
           <form className="flex flex-col items-center">
             <input
-              className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] w-[100%] sm:w-[80%] xl:w-[500px] bg-white text-smoky-black px-4 py-2 sm:px-6 sm:py-3 mb-4 rounded outline-none"
+              className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] w-[100%] sm:w-[80%] xl:w-[500px] bg-white text-black px-4 py-2 sm:px-6 sm:py-3 mb-4 rounded outline-none"
               type="text"
               placeholder="Type Your Email Here..."
             />

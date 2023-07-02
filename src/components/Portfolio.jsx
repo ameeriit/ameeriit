@@ -24,11 +24,11 @@ const Portfolio = () => {
   return (
     <section
       id="section1"
-      className="portfolio-section text-black pt-[40px] pb-[60px] px-[50px] bg-smoky-black"
+      className="portfolio-section text-white pt-[40px] pb-[60px] px-[50px] bg-black"
     >
       <div className="portfolio-wrapper container mx-auto">
         <h2
-          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10 font-[itim]"
+          className="font-medium text-4xl sm:text-4xl lg:text-6xl mb-10"
           style={{ textShadow: "0 2px 6px black" }}
         >
           PROJECTS
