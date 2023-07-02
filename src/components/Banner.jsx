@@ -32,7 +32,7 @@ const Banner = () => {
   ];
 
   return (
-    <section className="banner-section w-[100%] h-[100%] relative py-[120px] 2xl:py-[230px] ">
+    <section className="banner-section w-[100%] h-[100%] relative pt-[140px] pb-[180px] 2xl:py-[230px] ">
       <img
         className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-[0.15]"
         src={nepal}
