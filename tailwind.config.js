@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         "green-cm": "#004D40",
         "orange-cm": "#FF9F1C",
+        "red-cm": "#ff4f3c",
       },
       keyframes: {
         wave: {
@@ -27,10 +28,30 @@ module.exports = {
           "45%": { transform: "rotate(-45deg)", transformOrigin: "center" },
           "75%": { transform: "rotate(75deg)", transformOrigin: "center" },
         },
+        animate1: {
+          "0%": { "stroke-dashoffset": 380 },
+          "100%": { "stroke-dashoffset": 0 },
+        },
+        animate2: {
+          "0%": { "stroke-dashoffset": 360 },
+          "100%": { "stroke-dashoffset": 0 },
+        },
+        animate3: {
+          "0%": { "stroke-dashoffset": 90 },
+          "100%": { "stroke-dashoffset": 0 },
+        },
+        animate4: {
+          "0%": { "stroke-dashoffset": 260 },
+          "100%": { "stroke-dashoffset": 0 },
+        },
       },
       animation: {
         "waving-hand": "wave 2s linear infinite",
         "rotate-img": "swing 5s ease-in-out infinite",
+        animate1: "animate1 2s forwards",
+        animate2: "animate2 2s forwards",
+        animate3: "animate3 2s forwards",
+        animate4: "animate3 2s forwards",
       },
     },
   },
