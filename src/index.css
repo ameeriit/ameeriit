@@ -32,3 +32,22 @@ body {
   font-family: "Comfortaa", sans-serif;
   font-size: 16px;
 }
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Set the initial background color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #35b14f;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #004d40;
+}
