@@ -7,6 +7,7 @@ import SkillBar from "./components/SkillBar";
 import TechStackSlider from "./components/TechStackSlider";
 import SkillMap from "./components/SkillMap";
 import Portfolio from "./components/Portfolio";
+import CustomCursor from "./components/CustomCursor";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -54,19 +55,22 @@ const App = () => {
             cy="275"
             r="260"
             className="stroke-orange-cm stroke-[30px] fill-transparent animate-animate4"
-            style={{ strokeDasharray: 60, strokeDashoffset: 360 }}
+            style={{ strokeDasharray: 120, strokeDashoffset: 360 }}
           />
         </svg>
       ) : (
         <>
-          <Header />
-          <Banner />
-          <About />
-          <SkillBar />
-          <TechStackSlider />
-          <SkillMap />
-          <Portfolio />
-          <Footer />
+          <CustomCursor />
+          <>
+            <Header />
+            <Banner />
+            <About />
+            <SkillBar />
+            <TechStackSlider />
+            <SkillMap />
+            <Portfolio />
+            <Footer />
+          </>
         </>
       )}
     </>

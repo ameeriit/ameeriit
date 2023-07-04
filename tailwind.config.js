@@ -52,6 +52,7 @@ module.exports = {
         animate2: "animate2 2s forwards",
         animate3: "animate3 2s forwards",
         animate4: "animate3 2s forwards",
+        "rotate-cursor": "20s infinite",
       },
     },
   },
